@@ -18,7 +18,7 @@ class S3Controller extends Controller
         //Listing all S3 Bucket
         $buckets = $s3Client->listBuckets();
         foreach ($buckets['Buckets'] as $bucket) {
-            echo $bucket['Name'] . "\n";
+            echo $bucket['Name']."</br>";
         }
     }
 }
