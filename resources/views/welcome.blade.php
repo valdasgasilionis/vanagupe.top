@@ -85,7 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://images.vanagupe.top/logo.png">Docs</a>
+                    <a href="http://images.vanagupe.top/logo.png">Logo</a>
+                    <a href="http://images.vanagupe.top/palanga2.jpg">House</a>
                 </div>
             </div>
         </div>
