@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/s3list', 'S3Controller@list');
+Route::get('/s3store', 'S3Controller@store');

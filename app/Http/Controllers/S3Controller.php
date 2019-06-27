@@ -21,4 +21,27 @@ class S3Controller extends Controller
             echo $bucket['Name']."</br>";
         }
     }
+    public function store() {
+        
+        $bucket = 'dokumentai.vanagupe.top';
+        $keyname = 'uploaded.html';
+        
+        $s3 = new S3Client([
+         'version' => 'latest',
+         'region' => 'eu-west-1'
+        ]);
+        try {
+         // Upload data.
+         $result = $s3->putObject([
+         'Bucket' => $bucket,
+         'Key' => $keyname,
+         'Body' => 'laba diena, čia mano lietuviškai uploadinta!',
+         'ACL' => 'public-read'
+         ]);
+         // Print the URL to the object.
+         echo $result['ObjectURL'] . PHP_EOL;
+        } catch (S3Exception $e) {
+            echo $e->getMessage() . PHP_EOL;
+        }        
+    }
 }
