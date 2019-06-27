@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Aws\S3\S3Client;  
 use Aws\Exception\AwsException;
+use Aws\Common\Exception\MultipartUploadException;
+use Aws\S3\MultipartUploader;
 use Illuminate\Http\Request;
 
 class S3Controller extends Controller
@@ -43,5 +45,27 @@ class S3Controller extends Controller
         } catch (S3Exception $e) {
             echo $e->getMessage() . PHP_EOL;
         }        
+    }
+    public function multipart() {
+        $bucket = 'dokumentai.vanagupe.top';
+        $keyname = 'image.jpg';
+
+        $s3 = new S3Client([
+            'version' => 'latest',
+            'region' => 'eu-west-1'
+           ]);
+        // Prepare the upload parameters.
+        $uploader = new MultipartUploader($s3, 'public/Palanga.jpg', [
+        'bucket' => $bucket,
+        'key' => $keyname
+        ]);
+        // Perform the upload.
+        try {
+        $result = $uploader->upload();
+        echo "Upload complete: {$result['ObjectURL']}" . PHP_EOL;
+        } catch (MultipartUploadException $e) {
+        echo $e->getMessage() . PHP_EOL;
+        }
+
     }
 }

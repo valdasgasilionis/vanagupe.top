@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::get('/s3list', 'S3Controller@list');
 Route::get('/s3store', 'S3Controller@store');
+Route::get('/s3multipart', 'S3Controller@multipart');
