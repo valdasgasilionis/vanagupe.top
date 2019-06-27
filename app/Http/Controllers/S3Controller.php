@@ -149,7 +149,7 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
             'CopySource' => "{$sourceBucket}/{$sourceKeyname}",
             ]);
             }
-            try {
+            /* try {
             $results = CommandPool::batch($s3, $batch);
             foreach($results as $result) {
             if ($result instanceof ResultInterface) {
@@ -162,7 +162,7 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
             }
             } catch (\Exception $e) {
             // General error handling here
-            }
+            } */
 
     }
 }
