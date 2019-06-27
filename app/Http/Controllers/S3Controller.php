@@ -125,4 +125,43 @@ $result = $s3->completeMultipartUpload([
 $url = $result['Location'];
 echo "Uploaded {$filename} to {$url}." . PHP_EOL;
     }
+    public function copy(){
+        $sourceBucket = 'dokumentai.vanagupe.top';
+            $sourceKeyname = 'index.html';
+            $targetBucket = 'backups.vanagupe.top';
+            $s3 = new S3Client([
+            'version' => 'latest',
+            'region' => 'eu-west-1'
+            ]);
+            // Copy an object.
+            $s3->copyObject([
+            'Bucket' => $targetBucket,
+            'Key' => "{$sourceKeyname}-copy",
+            'CopySource' => "{$sourceBucket}/{$sourceKeyname}",
+            ]);
+            // Perform a batch of CopyObject operations.
+            $batch = array();
+            for ($i = 1; $i <= 3; $i++) {
+            $batch[] = $s3->getCommand('CopyObject', [
+            'Bucket' => $targetBucket,
+            'Key' => "{targetKeyname}-{$i}",
+            'CopySource' => "{$sourceBucket}/{$sourceKeyname}",
+            ]);
+            }
+            try {
+            $results = CommandPool::batch($s3, $batch);
+            foreach($results as $result) {
+            if ($result instanceof ResultInterface) {
+            echo "pavyko ~";
+            }
+            if ($result instanceof AwsException) {
+            // AwsException handling here
+            echo "nepavyko...:(";
+            }
+            }
+            } catch (\Exception $e) {
+            // General error handling here
+            }
+
+    }
 }
