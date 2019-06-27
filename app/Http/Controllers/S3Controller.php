@@ -6,6 +6,7 @@ use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 use Aws\Common\Exception\MultipartUploadException;
 use Aws\S3\MultipartUploader;
+use Aws\CommandInterface;
 use Illuminate\Http\Request;
 
 class S3Controller extends Controller
