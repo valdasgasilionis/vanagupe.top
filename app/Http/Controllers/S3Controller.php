@@ -102,9 +102,10 @@ try {
  $parts['Parts'][$partNumber] = [
  'PartNumber' => $partNumber,
  'ETag' => $result['ETag'],
- ];
+ ]; 
+ echo "Uploading part {$partNumber} of {$filename}.</br>" . PHP_EOL;
  $partNumber++;
- echo "Uploading part {$partNumber} of {$filename}." . PHP_EOL;
+ wait(3);
  }
  fclose($file);
 } catch (S3Exception $e) {
