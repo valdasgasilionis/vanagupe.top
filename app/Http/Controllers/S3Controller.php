@@ -105,7 +105,6 @@ try {
  ]; 
  echo "Uploading part {$partNumber} of {$filename}.</br>" . PHP_EOL;
  $partNumber++;
- sleep(3);
  }
  fclose($file);
 } catch (S3Exception $e) {
