@@ -97,7 +97,7 @@ try {
  'Key' => $keyname,
  'UploadId' => $uploadId,
  'PartNumber' => $partNumber,
- 'Body' => fread($file, 2 * 1024 * 1024),
+ 'Body' => fread($file, 5 * 1024 * 1024),
  ]);
  $parts['Parts'][$partNumber] = [
  'PartNumber' => $partNumber,
