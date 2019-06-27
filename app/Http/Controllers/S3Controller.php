@@ -55,7 +55,7 @@ class S3Controller extends Controller
             'region' => 'eu-west-1'
            ]);
         // Prepare the upload parameters.
-        $uploader = new MultipartUploader($s3, 'public/Palanga.jpg', [
+        $uploader = new MultipartUploader($s3, 'Palanga.jpg', [
         'bucket' => $bucket,
         'key' => $keyname
         ]);
