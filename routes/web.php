@@ -20,3 +20,4 @@ Route::get('/s3multipart', 'S3Controller@multipart');
 Route::get('/s3lowlevelmultipart', 'S3Controller@lowlevelmultipart');
 Route::get('/s3copy', 'S3Controller@copy');
 Route::get('/s3listkeys', 'S3Controller@listkeys');
+Route::get('/s3encrypt', 'S3Controller@encrypt');

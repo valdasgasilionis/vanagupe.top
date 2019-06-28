@@ -187,4 +187,21 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
             echo $e->getMessage() . PHP_EOL;
         }
     }
+    public function encrypt() {
+        $bucket = 'dokumentai.vanagupe.top';
+        $keyname = 'logo_encrypted.png';
+        // $filepath should be an absolute path to a file on disk.
+        $filepath = 'logo.png';
+        $s3 = new S3Client([
+        'version' => 'latest',
+        'region' => 'eu-west-1'
+        ]);
+        // Upload a file with server-side encryption.
+        $result = $s3->putObject([
+        'Bucket' => $bucket,
+        'Key' => $keyname,
+        'SourceFile' => $filepath,
+        'ServerSideEncryption' => 'AES256',
+       ]);       
+    }
 }
