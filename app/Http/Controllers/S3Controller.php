@@ -204,4 +204,18 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
         'ServerSideEncryption' => 'AES256',
        ]);       
     }
+    public function header() {
+        $bucket = 'dokumentai.vanagupe.top';
+        $keyname = 'logo_encrypted.png';
+        $s3 = new S3Client([
+            'version' => 'latest',
+            'region' => 'eu-west-1'
+            ]);
+        // Check which server-side encryption algorithm is used.
+        $result = $s3->headObject([
+            'Bucket' => $bucket,
+            'Key' => $keyname,
+        ]);
+        echo $result['ServerSideEncryption'];
+    }
 }
