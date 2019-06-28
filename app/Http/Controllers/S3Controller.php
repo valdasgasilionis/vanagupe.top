@@ -177,8 +177,10 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
             'Bucket' => $bucket
             ]);
             foreach ($results as $result) {
+                echo "</br>";
             foreach ($result['Contents'] as $object) {
             echo $object['Key'] . PHP_EOL;
+            echo "</br>";
             }
             }
         } catch (S3Exception $e) {
