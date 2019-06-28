@@ -163,6 +163,26 @@ echo "Uploaded {$filename} to {$url}." . PHP_EOL;
             } catch (\Exception $e) {
             // General error handling here
             } */
-
+    }
+    public function listkeys() {
+        $bucket = 'dokumentai.vanagupe.top';
+        // Instantiate the client.
+        $s3 = new S3Client([
+        'version' => 'latest',
+        'region' => 'eu-west-1'
+        ]);
+        // Use the high-level iterators (returns ALL of your objects).
+        try {
+            $results = $s3->getPaginator('ListObjects', [
+            'Bucket' => $bucket
+            ]);
+            foreach ($results as $result) {
+            foreach ($result['Contents'] as $object) {
+            echo $object['Key'] . PHP_EOL;
+            }
+            }
+        } catch (S3Exception $e) {
+            echo $e->getMessage() . PHP_EOL;
+        }
     }
 }
