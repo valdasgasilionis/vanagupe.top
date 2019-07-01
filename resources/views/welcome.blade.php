@@ -90,9 +90,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://images.vanagupe.top/logo.png">Logo</a>
-                    <a href="http://images.vanagupe.top/palanga2.jpg">House</a>
-                    <a href="http://images.vanagupe.top/Palanga.jpg">Sea</a>
+                    <a href="/july">July</a>
+                    <a href="/august">August</a>
+                    <a href="/september">September</a>
+                    <a href="/october">October</a>                    
                 </div>
             </div>
         </div>
