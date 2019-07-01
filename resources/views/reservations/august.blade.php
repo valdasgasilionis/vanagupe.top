@@ -39,6 +39,7 @@ body {font-family: Verdana, sans-serif;}
   margin: 0;
   padding: 10px 0;
   background-color: #ddd;
+  border: 1px solid black;
 }
 
 .weekdays li {
