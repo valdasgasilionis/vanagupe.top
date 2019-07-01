@@ -38,7 +38,7 @@ class RegisterController extends Controller
     public function __construct()
     {
        /*  $this->middleware('guest'); */
-       Redirect::to('/')->send();
+       return redirect('/')->with('register', 'Registration is for admin only!');
     }
 
     /**
