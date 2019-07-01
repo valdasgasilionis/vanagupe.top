@@ -39,7 +39,6 @@ body {font-family: Verdana, sans-serif;}
   margin: 0;
   padding: 10px 0;
   background-color: #ddd;
-  border: 1px solid black;
 }
 
 .weekdays li {
@@ -60,9 +59,23 @@ body {font-family: Verdana, sans-serif;}
   display: inline-block;
   width: 13.6%;
   text-align: center;
+  padding: 25px 0;
   margin-bottom: 5px;
-  font-size:12px;
+  font-size:18px;
+  font-weight: 900;
   color: #777;
+}
+.price  {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  color:green;
+}
+.booked {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .days li .active {
@@ -88,15 +101,13 @@ body {font-family: Verdana, sans-serif;}
 </head>
 <body>
 
-<h1>CSS Calendar</h1>
-
 <div class="month">      
   <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
+    {{-- <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li> --}}
     <li>
       August<br>
-      <span style="font-size:18px">2017</span>
+      <span style="font-size:18px">2019</span>
     </li>
   </ul>
 </div>
@@ -112,37 +123,40 @@ body {font-family: Verdana, sans-serif;}
 </ul>
 
 <ul class="days">  
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><span class="active">10</span></li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
+  <li>&nbsp;</li>
+  <li>&nbsp;</li>
+  <li>&nbsp;</li>
+  <li>1</br><span class="price">60 &euro;</span></li>
+  <li>2</br><span class="booked">not available</span></li>
+  <li>3</br><span class="booked">not available</span></li>
+  <li>4</br><span class="price">60 &euro;</span></li>
+  <li>5</br><span class="price">60 &euro;</span></li>
+  <li>6</br><span class="price">60 &euro;</span></li>
+  <li>7</br><span class="price">60 &euro;</span></li>
+  <li>8</br><span class="price">60 &euro;</span></li>
+  <li>9</br><span class="price">60 &euro;</span></li>
+  <li>10</br><span class="price">60 &euro;</span></li>
+  <li>11</br><span class="price">60 &euro;</span></li>
+  <li>12</br><span class="price">60 &euro;</span></li>
+  <li>13</br><span class="booked">not available</span></li>
+  <li>14</br><span class="booked">not available</span></li>
+  <li>15</br><span class="price">60 &euro;</span></li>
+  <li>16</br><span class="price">60 &euro;</span></li>
+  <li>17</br><span class="price">60 &euro;</span></li>
+  <li>18</br><span class="price">60 &euro;</span></li>
+  <li>19</br><span class="price">60 &euro;</span></li>
+  <li>20</br><span class="price">60 &euro;</span></li>
+  <li>21</br><span class="price">60 &euro;</span></li>
+  <li>22</br><span class="price">60 &euro;</span></li>
+  <li>23</br><span class="price">60 &euro;</span></li>
+  <li>24</br><span class="price">60 &euro;</span></li>
+  <li>25</br><span class="price">60 &euro;</span></li>
+  <li>26</br><span class="price">60 &euro;</span></li>
+  <li>27</br><span class="price">60 &euro;</span></li>
+  <li>28</br><span class="price">60 &euro;</span></li>
+  <li>29</br><span class="price">60 &euro;</span></li>
+  <li>30</br><span class="price">60 &euro;</span></li>
+  <li>31</br><span class="price">60 &euro;</span></li>
 </ul>
 
 </body>
