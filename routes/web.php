@@ -26,3 +26,4 @@ Route::get('/s3header', 'S3Controller@header'); */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/august', 'ReservationController@august');
