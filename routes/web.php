@@ -23,6 +23,6 @@ Route::get('/s3listkeys', 'S3Controller@listkeys');
 Route::get('/s3encrypt', 'S3Controller@encrypt');
 Route::get('/s3header', 'S3Controller@header'); */
 
-Auth::routes(['verify' => true]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
