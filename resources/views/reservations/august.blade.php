@@ -9,7 +9,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #1abc9c;
+  background-color:rgba(27, 101, 81, 1) ;
   text-align: center;
 }
 
