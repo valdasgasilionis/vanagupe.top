@@ -295,7 +295,7 @@
             @if ($rentals[61]->reserved === 1)
                 &#9940
             @else
-                {{$rentals[30]->price}} &euro;
+                {{$rentals[61]->price}} &euro;
             @endif                  
           </span>
         </li>

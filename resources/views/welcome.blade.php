@@ -301,7 +301,11 @@ body {font-family: Verdana, sans-serif;}
     <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <span style="font-size:12px; float:right"> &#9940  Not available</span>
+        <span class="booked"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &#9940  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="price">XX &euro;</span>
+        <span class="price">  price in EUR/day. Additional final cleaning fee 30 EUR.</span>
+        
     <!-- The dots/circles -->
        {{--  <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
