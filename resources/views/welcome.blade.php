@@ -25,15 +25,15 @@
                 height: 80vh;
             }
 
-            .flex-center {
+            /* .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-            }
+            } */
 
-            .position-ref {
+           /*  .position-ref {
                 position: relative;
-            }
+            } */
 
             .top-right {
                 position: absolute;
@@ -43,7 +43,7 @@
 
             .content {
                 width:70%;
-                text-align: center;
+                /* text-align: center; */
             }
 
             .title {
@@ -63,7 +63,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            * {box-sizing: border-box;}
+* {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
@@ -275,24 +275,22 @@ body {font-family: Verdana, sans-serif;}
                     @endauth
                 </div>
             @endif
-{{-- main content here --}}
-
         </div>
          
 
-            <div class="content">
+<div class="content">
                <!-- Slideshow container -->
-<div class="slideshow-container"> 
-       <div>
-                <h2>Vanagupe - aprašymas čia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
-                    nesciunt voluptatem commodi possimus quaerat minima sequi 
-                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
-                    nesciunt voluptatem commodi possimus quaerat minima sequi 
-                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
-                </p>
-            </div>
+    <div class="slideshow-container"> 
+        <div>
+            <h2>Vanagupe - aprašymas čia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
+                nesciunt voluptatem commodi possimus quaerat minima sequi 
+                provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
+                nesciunt voluptatem commodi possimus quaerat minima sequi 
+                provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
+            </p>
+        </div>
     <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -305,236 +303,22 @@ body {font-family: Verdana, sans-serif;}
         </div> --}}
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-                <div class="month">      
-                    <ul>
-                        <li>
-                        July<span style="font-size:18px">2019</span>
-                        </li>
-                    </ul>
-                </div>                      
-                      <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                      </ul>
-                      
-                      <ul class="days">  
-                        <li>1</br><span class="price">60 &euro;</span></li>
-                        <li>2</br><span class="booked">not available</span></li>
-                        <li>3</br><span class="booked">not available</span></li>
-                        <li>4</br><span class="price">60 &euro;</span></li>
-                        <li>5</br><span class="price">60 &euro;</span></li>
-                        <li>6</br><span class="price">60 &euro;</span></li>
-                        <li>7</br><span class="price">60 &euro;</span></li>
-                        <li>8</br><span class="price">60 &euro;</span></li>
-                        <li>9</br><span class="price">60 &euro;</span></li>
-                        <li>10</br><span class="price">60 &euro;</span></li>
-                        <li>11</br><span class="price">60 &euro;</span></li>
-                        <li>12</br><span class="price">60 &euro;</span></li>
-                        <li>13</br><span class="booked">not available</span></li>
-                        <li>14</br><span class="booked">not available</span></li>
-                        <li>15</br><span class="price">60 &euro;</span></li>
-                        <li>16</br><span class="price">60 &euro;</span></li>
-                        <li>17</br><span class="price">60 &euro;</span></li>
-                        <li>18</br><span class="price">60 &euro;</span></li>
-                        <li>19</br><span class="price">60 &euro;</span></li>
-                        <li>20</br><span class="price">60 &euro;</span></li>
-                        <li>21</br><span class="price">60 &euro;</span></li>
-                        <li>22</br><span class="price">60 &euro;</span></li>
-                        <li>23</br><span class="price">60 &euro;</span></li>
-                        <li>24</br><span class="price">60 &euro;</span></li>
-                        <li>25</br><span class="price">60 &euro;</span></li>
-                        <li>26</br><span class="price">60 &euro;</span></li>
-                        <li>27</br><span class="price">60 &euro;</span></li>
-                        <li>28</br><span class="price">60 &euro;</span></li>
-                        <li>29</br><span class="price">60 &euro;</span></li>
-                        <li>30</br><span class="price">60 &euro;</span></li>
-                        <li>31</br><span class="price">60 &euro;</span></li>
-                      </ul>         
+            @include('calendar.july')
+        </div>      
+        <div class="mySlides fade">
+              @include('calendar.august')         
         </div>
       
         <div class="mySlides fade">
-                <div class="month">      
-                        <ul>
-                          <li>
-                            August<span style="font-size:18px">2019</span>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                      <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                      </ul>
-                      
-                      <ul class="days">  
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>1</br><span class="price">60 &euro;</span></li>
-                        <li>2</br><span class="booked">not available</span></li>
-                        <li>3</br><span class="booked">not available</span></li>
-                        <li>4</br><span class="price">60 &euro;</span></li>
-                        <li>5</br><span class="price">60 &euro;</span></li>
-                        <li>6</br><span class="price">60 &euro;</span></li>
-                        <li>7</br><span class="price">60 &euro;</span></li>
-                        <li>8</br><span class="price">60 &euro;</span></li>
-                        <li>9</br><span class="price">60 &euro;</span></li>
-                        <li>10</br><span class="price">60 &euro;</span></li>
-                        <li>11</br><span class="price">60 &euro;</span></li>
-                        <li>12</br><span class="price">60 &euro;</span></li>
-                        <li>13</br><span class="booked">not available</span></li>
-                        <li>14</br><span class="booked">not available</span></li>
-                        <li>15</br><span class="price">60 &euro;</span></li>
-                        <li>16</br><span class="price">60 &euro;</span></li>
-                        <li>17</br><span class="price">60 &euro;</span></li>
-                        <li>18</br><span class="price">60 &euro;</span></li>
-                        <li>19</br><span class="price">60 &euro;</span></li>
-                        <li>20</br><span class="price">60 &euro;</span></li>
-                        <li>21</br><span class="price">60 &euro;</span></li>
-                        <li>22</br><span class="price">60 &euro;</span></li>
-                        <li>23</br><span class="price">60 &euro;</span></li>
-                        <li>24</br><span class="price">60 &euro;</span></li>
-                        <li>25</br><span class="price">60 &euro;</span></li>
-                        <li>26</br><span class="price">60 &euro;</span></li>
-                        <li>27</br><span class="price">60 &euro;</span></li>
-                        <li>28</br><span class="price">60 &euro;</span></li>
-                        <li>29</br><span class="price">60 &euro;</span></li>
-                        <li>30</br><span class="price">60 &euro;</span></li>
-                        <li>31</br><span class="price">60 &euro;</span></li>
-                      </ul>          
-        </div>
-      
-        <div class="mySlides fade">
-                <div class="month">      
-                    <ul>
-                        <li>
-                        September<span style="font-size:18px">2019</span>
-                        </li>
-                    </ul>
-                </div>                      
-                      <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                      </ul>
-                      
-                      <ul class="days">  
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>&nbsp;</li>
-                        <li>1</br><span class="price">60 &euro;</span></li>
-                        <li>2</br><span class="booked">not available</span></li>
-                        <li>3</br><span class="booked">not available</span></li>
-                        <li>4</br><span class="price">60 &euro;</span></li>
-                        <li>5</br><span class="price">60 &euro;</span></li>
-                        <li>6</br><span class="price">60 &euro;</span></li>
-                        <li>7</br><span class="price">60 &euro;</span></li>
-                        <li>8</br><span class="price">60 &euro;</span></li>
-                        <li>9</br><span class="price">60 &euro;</span></li>
-                        <li>10</br><span class="price">60 &euro;</span></li>
-                        <li>11</br><span class="price">60 &euro;</span></li>
-                        <li>12</br><span class="price">60 &euro;</span></li>
-                        <li>13</br><span class="booked">not available</span></li>
-                        <li>14</br><span class="booked">not available</span></li>
-                        <li>15</br><span class="price">60 &euro;</span></li>
-                        <li>16</br><span class="price">60 &euro;</span></li>
-                        <li>17</br><span class="price">60 &euro;</span></li>
-                        <li>18</br><span class="price">60 &euro;</span></li>
-                        <li>19</br><span class="price">60 &euro;</span></li>
-                        <li>20</br><span class="price">60 &euro;</span></li>
-                        <li>21</br><span class="price">60 &euro;</span></li>
-                        <li>22</br><span class="price">60 &euro;</span></li>
-                        <li>23</br><span class="price">60 &euro;</span></li>
-                        <li>24</br><span class="price">60 &euro;</span></li>
-                        <li>25</br><span class="price">60 &euro;</span></li>
-                        <li>26</br><span class="price">60 &euro;</span></li>
-                        <li>27</br><span class="price">60 &euro;</span></li>
-                        <li>28</br><span class="price">60 &euro;</span></li>
-                        <li>29</br><span class="price">60 &euro;</span></li>
-                        <li>30</br><span class="price">60 &euro;</span></li>
-                      </ul>        
+                @include('calendar.september')     
         </div>
 
         <div class="mySlides fade">
-                <div class="month">      
-                    <ul>
-                        <li>
-                        October<span style="font-size:18px">2019</span>
-                        </li>
-                    </ul>
-                </div>
-                      
-                      <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                      </ul>
-                      
-                      <ul class="days">  
-                        <li>&nbsp;</li>
-                        <li>1</br><span class="price">60 &euro;</span></li>
-                        <li>2</br><span class="booked">not available</span></li>
-                        <li>3</br><span class="booked">not available</span></li>
-                        <li>4</br><span class="price">60 &euro;</span></li>
-                        <li>5</br><span class="price">60 &euro;</span></li>
-                        <li>6</br><span class="price">60 &euro;</span></li>
-                        <li>7</br><span class="price">60 &euro;</span></li>
-                        <li>8</br><span class="price">60 &euro;</span></li>
-                        <li>9</br><span class="price">60 &euro;</span></li>
-                        <li>10</br><span class="price">60 &euro;</span></li>
-                        <li>11</br><span class="price">60 &euro;</span></li>
-                        <li>12</br><span class="price">60 &euro;</span></li>
-                        <li>13</br><span class="booked">not available</span></li>
-                        <li>14</br><span class="booked">not available</span></li>
-                        <li>15</br><span class="price">60 &euro;</span></li>
-                        <li>16</br><span class="price">60 &euro;</span></li>
-                        <li>17</br><span class="price">60 &euro;</span></li>
-                        <li>18</br><span class="price">60 &euro;</span></li>
-                        <li>19</br><span class="price">60 &euro;</span></li>
-                        <li>20</br><span class="price">60 &euro;</span></li>
-                        <li>21</br><span class="price">60 &euro;</span></li>
-                        <li>22</br><span class="price">60 &euro;</span></li>
-                        <li>23</br><span class="price">60 &euro;</span></li>
-                        <li>24</br><span class="price">60 &euro;</span></li>
-                        <li>25</br><span class="price">60 &euro;</span></li>
-                        <li>26</br><span class="price">60 &euro;</span></li>
-                        <li>27</br><span class="price">60 &euro;</span></li>
-                        <li>28</br><span class="price">60 &euro;</span></li>
-                        <li>29</br><span class="price">60 &euro;</span></li>
-                        <li>30</br><span class="price">60 &euro;</span></li>
-                        <li>31</br><span class="price">60 &euro;</span></li>
-                      </ul>                     
-        </div>
-      
-       
-      </div>
-      <br>
-      
-     
-               
-            </div>
-        </div>
+                @include('calendar.october')                   
+        </div>       
+    </div>              
+</div>
+        
         <script>
             var slideIndex = 1;
 showSlides(slideIndex);
