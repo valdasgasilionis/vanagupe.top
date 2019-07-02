@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+{{--  --}}
 
         <!-- Styles -->
         <style>
@@ -16,12 +17,12 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 80vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 80vh;
             }
 
             .flex-center {
@@ -41,6 +42,7 @@
             }
 
             .content {
+                width:70%;
                 text-align: center;
             }
 
@@ -61,7 +63,197 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+            * {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background-color:rgba(27, 101, 81, 1) ;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 5px;
+  font-size:18px;
+  font-weight: 900;
+  color: #777;
+}
+.price  {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  color:green;
+}
+.booked {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  /* position: relative; */
+  align-content: center;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  /* margin:auto; */
+  /* position: absolute; */
+  /* top: 50%; */
+  width: auto;
+  /* margin-top: -22px; */
+  padding: 16px;
+  color:rgba(27, 101, 81, 1);
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /* background-color: rgba(0,0,0,0.8); */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
     </head>
     <body>
         @if (Session('register'))
@@ -69,7 +261,7 @@
             {{session('register')}};
         </div>
         @endif
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -83,19 +275,296 @@
                     @endauth
                 </div>
             @endif
+{{-- main content here --}}
+
+        </div>
+         
 
             <div class="content">
-                <div class="title m-b-md">
-                    Vanagupe.top
-                </div>
+               <!-- Slideshow container -->
+<div class="slideshow-container"> 
+       <div>
+                <h2>Vanagupe - aprašymas čia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
+                    nesciunt voluptatem commodi possimus quaerat minima sequi 
+                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
+                    nesciunt voluptatem commodi possimus quaerat minima sequi 
+                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
+                </p>
+            </div>
+    <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- The dots/circles -->
+       {{--  <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div> --}}
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+                <div class="month">      
+                    <ul>
+                        <li>
+                        July<span style="font-size:18px">2019</span>
+                        </li>
+                    </ul>
+                </div>                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">  
+                        <li>1</br><span class="price">60 &euro;</span></li>
+                        <li>2</br><span class="booked">not available</span></li>
+                        <li>3</br><span class="booked">not available</span></li>
+                        <li>4</br><span class="price">60 &euro;</span></li>
+                        <li>5</br><span class="price">60 &euro;</span></li>
+                        <li>6</br><span class="price">60 &euro;</span></li>
+                        <li>7</br><span class="price">60 &euro;</span></li>
+                        <li>8</br><span class="price">60 &euro;</span></li>
+                        <li>9</br><span class="price">60 &euro;</span></li>
+                        <li>10</br><span class="price">60 &euro;</span></li>
+                        <li>11</br><span class="price">60 &euro;</span></li>
+                        <li>12</br><span class="price">60 &euro;</span></li>
+                        <li>13</br><span class="booked">not available</span></li>
+                        <li>14</br><span class="booked">not available</span></li>
+                        <li>15</br><span class="price">60 &euro;</span></li>
+                        <li>16</br><span class="price">60 &euro;</span></li>
+                        <li>17</br><span class="price">60 &euro;</span></li>
+                        <li>18</br><span class="price">60 &euro;</span></li>
+                        <li>19</br><span class="price">60 &euro;</span></li>
+                        <li>20</br><span class="price">60 &euro;</span></li>
+                        <li>21</br><span class="price">60 &euro;</span></li>
+                        <li>22</br><span class="price">60 &euro;</span></li>
+                        <li>23</br><span class="price">60 &euro;</span></li>
+                        <li>24</br><span class="price">60 &euro;</span></li>
+                        <li>25</br><span class="price">60 &euro;</span></li>
+                        <li>26</br><span class="price">60 &euro;</span></li>
+                        <li>27</br><span class="price">60 &euro;</span></li>
+                        <li>28</br><span class="price">60 &euro;</span></li>
+                        <li>29</br><span class="price">60 &euro;</span></li>
+                        <li>30</br><span class="price">60 &euro;</span></li>
+                        <li>31</br><span class="price">60 &euro;</span></li>
+                      </ul>         
+        </div>
+      
+        <div class="mySlides fade">
+                <div class="month">      
+                        <ul>
+                          <li>
+                            August<span style="font-size:18px">2019</span>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">  
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>1</br><span class="price">60 &euro;</span></li>
+                        <li>2</br><span class="booked">not available</span></li>
+                        <li>3</br><span class="booked">not available</span></li>
+                        <li>4</br><span class="price">60 &euro;</span></li>
+                        <li>5</br><span class="price">60 &euro;</span></li>
+                        <li>6</br><span class="price">60 &euro;</span></li>
+                        <li>7</br><span class="price">60 &euro;</span></li>
+                        <li>8</br><span class="price">60 &euro;</span></li>
+                        <li>9</br><span class="price">60 &euro;</span></li>
+                        <li>10</br><span class="price">60 &euro;</span></li>
+                        <li>11</br><span class="price">60 &euro;</span></li>
+                        <li>12</br><span class="price">60 &euro;</span></li>
+                        <li>13</br><span class="booked">not available</span></li>
+                        <li>14</br><span class="booked">not available</span></li>
+                        <li>15</br><span class="price">60 &euro;</span></li>
+                        <li>16</br><span class="price">60 &euro;</span></li>
+                        <li>17</br><span class="price">60 &euro;</span></li>
+                        <li>18</br><span class="price">60 &euro;</span></li>
+                        <li>19</br><span class="price">60 &euro;</span></li>
+                        <li>20</br><span class="price">60 &euro;</span></li>
+                        <li>21</br><span class="price">60 &euro;</span></li>
+                        <li>22</br><span class="price">60 &euro;</span></li>
+                        <li>23</br><span class="price">60 &euro;</span></li>
+                        <li>24</br><span class="price">60 &euro;</span></li>
+                        <li>25</br><span class="price">60 &euro;</span></li>
+                        <li>26</br><span class="price">60 &euro;</span></li>
+                        <li>27</br><span class="price">60 &euro;</span></li>
+                        <li>28</br><span class="price">60 &euro;</span></li>
+                        <li>29</br><span class="price">60 &euro;</span></li>
+                        <li>30</br><span class="price">60 &euro;</span></li>
+                        <li>31</br><span class="price">60 &euro;</span></li>
+                      </ul>          
+        </div>
+      
+        <div class="mySlides fade">
+                <div class="month">      
+                    <ul>
+                        <li>
+                        September<span style="font-size:18px">2019</span>
+                        </li>
+                    </ul>
+                </div>                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">  
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>1</br><span class="price">60 &euro;</span></li>
+                        <li>2</br><span class="booked">not available</span></li>
+                        <li>3</br><span class="booked">not available</span></li>
+                        <li>4</br><span class="price">60 &euro;</span></li>
+                        <li>5</br><span class="price">60 &euro;</span></li>
+                        <li>6</br><span class="price">60 &euro;</span></li>
+                        <li>7</br><span class="price">60 &euro;</span></li>
+                        <li>8</br><span class="price">60 &euro;</span></li>
+                        <li>9</br><span class="price">60 &euro;</span></li>
+                        <li>10</br><span class="price">60 &euro;</span></li>
+                        <li>11</br><span class="price">60 &euro;</span></li>
+                        <li>12</br><span class="price">60 &euro;</span></li>
+                        <li>13</br><span class="booked">not available</span></li>
+                        <li>14</br><span class="booked">not available</span></li>
+                        <li>15</br><span class="price">60 &euro;</span></li>
+                        <li>16</br><span class="price">60 &euro;</span></li>
+                        <li>17</br><span class="price">60 &euro;</span></li>
+                        <li>18</br><span class="price">60 &euro;</span></li>
+                        <li>19</br><span class="price">60 &euro;</span></li>
+                        <li>20</br><span class="price">60 &euro;</span></li>
+                        <li>21</br><span class="price">60 &euro;</span></li>
+                        <li>22</br><span class="price">60 &euro;</span></li>
+                        <li>23</br><span class="price">60 &euro;</span></li>
+                        <li>24</br><span class="price">60 &euro;</span></li>
+                        <li>25</br><span class="price">60 &euro;</span></li>
+                        <li>26</br><span class="price">60 &euro;</span></li>
+                        <li>27</br><span class="price">60 &euro;</span></li>
+                        <li>28</br><span class="price">60 &euro;</span></li>
+                        <li>29</br><span class="price">60 &euro;</span></li>
+                        <li>30</br><span class="price">60 &euro;</span></li>
+                      </ul>        
+        </div>
 
-                <div class="links">
-                    <a href="/july">July</a>
-                    <a href="/august">August</a>
-                    <a href="/september">September</a>
-                    <a href="/october">October</a>                    
+        <div class="mySlides fade">
+                <div class="month">      
+                    <ul>
+                        <li>
+                        October<span style="font-size:18px">2019</span>
+                        </li>
+                    </ul>
                 </div>
+                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">  
+                        <li>&nbsp;</li>
+                        <li>1</br><span class="price">60 &euro;</span></li>
+                        <li>2</br><span class="booked">not available</span></li>
+                        <li>3</br><span class="booked">not available</span></li>
+                        <li>4</br><span class="price">60 &euro;</span></li>
+                        <li>5</br><span class="price">60 &euro;</span></li>
+                        <li>6</br><span class="price">60 &euro;</span></li>
+                        <li>7</br><span class="price">60 &euro;</span></li>
+                        <li>8</br><span class="price">60 &euro;</span></li>
+                        <li>9</br><span class="price">60 &euro;</span></li>
+                        <li>10</br><span class="price">60 &euro;</span></li>
+                        <li>11</br><span class="price">60 &euro;</span></li>
+                        <li>12</br><span class="price">60 &euro;</span></li>
+                        <li>13</br><span class="booked">not available</span></li>
+                        <li>14</br><span class="booked">not available</span></li>
+                        <li>15</br><span class="price">60 &euro;</span></li>
+                        <li>16</br><span class="price">60 &euro;</span></li>
+                        <li>17</br><span class="price">60 &euro;</span></li>
+                        <li>18</br><span class="price">60 &euro;</span></li>
+                        <li>19</br><span class="price">60 &euro;</span></li>
+                        <li>20</br><span class="price">60 &euro;</span></li>
+                        <li>21</br><span class="price">60 &euro;</span></li>
+                        <li>22</br><span class="price">60 &euro;</span></li>
+                        <li>23</br><span class="price">60 &euro;</span></li>
+                        <li>24</br><span class="price">60 &euro;</span></li>
+                        <li>25</br><span class="price">60 &euro;</span></li>
+                        <li>26</br><span class="price">60 &euro;</span></li>
+                        <li>27</br><span class="price">60 &euro;</span></li>
+                        <li>28</br><span class="price">60 &euro;</span></li>
+                        <li>29</br><span class="price">60 &euro;</span></li>
+                        <li>30</br><span class="price">60 &euro;</span></li>
+                        <li>31</br><span class="price">60 &euro;</span></li>
+                      </ul>                     
+        </div>
+      
+       
+      </div>
+      <br>
+      
+     
+               
             </div>
         </div>
+        <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+
     </body>
 </html>
