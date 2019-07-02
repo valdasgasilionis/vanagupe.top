@@ -1,5 +1,8 @@
 <?php
 
+use App\rental;
+use App\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,21 +15,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+     $rentals = rental::all();
+   /*  return $rentals; */
+    return view('welcome', compact('rentals'));
 });
-/* Route::get('/s3list', 'S3Controller@list');
-Route::get('/s3store', 'S3Controller@store');
-Route::get('/s3multipart', 'S3Controller@multipart');
-Route::get('/s3lowlevelmultipart', 'S3Controller@lowlevelmultipart');
-Route::get('/s3copy', 'S3Controller@copy');
-Route::get('/s3listkeys', 'S3Controller@listkeys');
-Route::get('/s3encrypt', 'S3Controller@encrypt');
-Route::get('/s3header', 'S3Controller@header'); */
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/july', 'ReservationController@july');
-Route::get('/august', 'ReservationController@august');
-Route::get('/september', 'ReservationController@september');
-Route::get('/october', 'ReservationController@october');
+

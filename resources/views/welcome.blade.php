@@ -135,8 +135,7 @@ body {font-family: Verdana, sans-serif;}
 .booked {
   color: red;
   font-size: 12px;
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 400;
 }
 
 .days li .active {
@@ -252,6 +251,11 @@ body {font-family: Verdana, sans-serif;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+.images {
+    position: absolute;
+    top:20px;
+    right:20px;
+}
 
 </style>
     </head>
@@ -275,6 +279,9 @@ body {font-family: Verdana, sans-serif;}
                     @endauth
                 </div>
             @endif
+        </div>
+        <div class="images">
+            <img src="Palanga.jpg" style="width:150px;height:auto">
         </div>
          
 
