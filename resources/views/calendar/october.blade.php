@@ -25,7 +25,22 @@
                         &#9940
                     @else
                         {{$rentals[$i+91]->price}} &euro;
-                    @endif                  
+                    @endif   
+                    @if (auth()->check())
+                    <form action="/edit" method="POST">
+                        @csrf
+                      <input class="admin" type="text" name="price" value="{{$rentals[$i+91]->price}}">
+                    </br>
+                      <input class="admin" type="date" name="date" value="{{$rentals[$i+91]->date}}" readonly>
+                    </br>
+                      <input class="admin" type="submit" value="submit">
+                    </form>
+                  </br>
+                      reserved?
+                  <form action="/reserved" method="post">
+      <input type="checkbox" name="reserved" {{$rentals[$i+91]->reserved ? 'checked' : ''}} onChange="this.form.submit()">
+                  </form>
+                @endif               
                   </span>
                 </li>
               @endfor            
