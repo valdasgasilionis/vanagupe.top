@@ -24,7 +24,9 @@ Auth::routes();
 
 Route::post('/edit', function(Request $request) {
     $rental = rental::where('id', $request->id)->get();
-    return $rental;
+    $rental['price'] = $request->price;
+    $rental->update();
+    return back();
 });
 
 
