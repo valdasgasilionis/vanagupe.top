@@ -40,7 +40,7 @@
                       reserved?
                   <form action="/reserved" method="post">
                     @csrf
-                    <input type="text" name="id" value="{{$rentals[$i+91]->id}}" readonly>
+                    <input type="hidden" name="id" value="{{$rentals[$i+91]->id}}" readonly>
       <input type="checkbox" name="reserved" {{$rentals[$i+91]->reserved ? 'checked' : ''}} onChange="this.form.submit()">
                   </form>
                 @endif               
