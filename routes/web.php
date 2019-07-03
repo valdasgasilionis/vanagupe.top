@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use App\rental;
 use App\User;
 
@@ -19,8 +20,11 @@ Route::get('/', function () {
    /*  return $rentals; */
     return view('welcome', compact('rentals'));
 });
-
-
 Auth::routes();
+
+Route::post('/edit', function(Request $request) {
+    $rental = rental::where('id', $request->id)-get();
+    return $rental;
+});
 
 
