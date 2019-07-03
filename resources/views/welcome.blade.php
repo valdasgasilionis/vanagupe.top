@@ -22,18 +22,18 @@
             }
 
             .full-height {
-                height: 80vh;
+                height: 5vh;
             }
 
-            /* .flex-center {
+           /*  .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
             } */
 
-           /*  .position-ref {
+            .position-ref {
                 position: relative;
-            } */
+            }
 
             .top-right {
                 position: absolute;
@@ -259,7 +259,7 @@ body {font-family: Verdana, sans-serif;}
 }
 .images {
     position: absolute;
-    top:20px;
+    top:120px;
     right:20px;
 }
 
@@ -271,7 +271,7 @@ body {font-family: Verdana, sans-serif;}
             {{session('register')}};
         </div>
         @endif
-        <div class="flex-center position-ref">
+        <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
