@@ -27,8 +27,8 @@
             @if (auth()->check())
                 <form action="/edit" method="POST">
                     @csrf
-                  <input type="text" name="price" value="{{$rentals[$i-1]->price}}">
-                  <input type="submit" value="submit">
+                  <input class="admin" type="text" name="price" value="{{$rentals[$i-1]->price}}">
+                  <input class="admin" type="submit" value="submit">
                 </form>
               </br>
                   reserved?

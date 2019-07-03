@@ -262,6 +262,10 @@ body {font-family: Verdana, sans-serif;}
     top:120px;
     right:20px;
 }
+.admin {
+  width:15px;
+  font-size:10px;
+}
 
 </style>
     </head>
