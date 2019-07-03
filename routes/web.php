@@ -32,10 +32,12 @@ Route::post('/reserved', function(Request $request) {
     $rental = rental::where('id', $request->id)->get();
     if ($rental[0]->reserved == 0) {
         $rental[0]->reserved = 1;
+        $rental[0]->save();
     } else {
         $rental[0]->reserved = 0;
+        $rental[0]->save();
     }  
-    $rental[0]->save();
+    
     return back();
 });
 
