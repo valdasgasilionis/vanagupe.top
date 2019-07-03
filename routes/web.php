@@ -31,13 +31,13 @@ Route::post('/edit', function(Request $request) {
 Route::post('/reserved', function(Request $request) {
     $rentalitem = rental::where('id', $request->id)->get();
     return $rentalitem;
-  /*   if ($rental[0]->reserved = 0) {
-        $rental[0]->reserved = 1;
-        $rental[0]->save();
+    if ($rentalitem[0]->reserved = 0) {
+        $rentalitem[0]->reserved = 1;
+        $rentalitem[0]->save();
     } else {
-        $rental[0]->reserved = 0;
-        $rental[0]->save();
-    }   */
+        $rentalitem[0]->reserved = 0;
+        $rentalitem[0]->save();
+    }  
     
     return back();
 });
