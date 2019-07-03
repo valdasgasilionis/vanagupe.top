@@ -31,7 +31,7 @@ Route::post('/edit', function(Request $request) {
 Route::post('/reserved', function(Request $request) {
     $rentalitem = rental::where('id', $request->id)->get();
     
-    if ($rentalitem[0]->reserved = 0) {
+    if ($rentalitem[0]->reserved == 0) {
         $rentalitem[0]->reserved = 1;
         $rentalitem[0]->save();
     } else {
