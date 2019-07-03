@@ -137,6 +137,12 @@ body {font-family: Verdana, sans-serif;}
   font-size: 12px;
   font-weight: 400;
 }
+.booked_days {
+  background-color:rgba(255, 99, 71, 0.4);
+}
+.price_days {
+  background-color: rgba(176, 208, 175, 0.67);
+}
 
 .days li .active {
   padding: 5px;
@@ -349,8 +355,11 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  /* this is the original code to loop cycle the frames */
+ /*  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length} */
+  if (n > slides.length) {slideIndex = 4} //stop at the last month
+  if (n < 1) {slideIndex = 1} //does not go back to the last month
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
