@@ -37,6 +37,7 @@
               </br>
                   reserved?
               <form action="/reserved" method="post">
+                @csrf
   <input type="checkbox" name="reserved" {{$rentals[$i-1]->reserved ? 'checked' : ''}} onChange="this.form.submit()">
               </form>
             @endif
