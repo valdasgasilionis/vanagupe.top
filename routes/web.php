@@ -23,7 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::post('/edit', function(Request $request) {
-    $rental = rental::where('id', $request->id)-get();
+    $rental = rental::where('id', $request->id)->get();
     return $rental;
 });
 
