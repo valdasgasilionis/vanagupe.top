@@ -165,7 +165,7 @@ body {font-family: Verdana, sans-serif;}
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 1000px;
   /* position: relative; */
   align-content: center;
   margin: auto;
