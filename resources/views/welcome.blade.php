@@ -263,7 +263,7 @@ body {font-family: Verdana, sans-serif;}
     right:20px;
 }
 .admin {
-  width:30px;
+  width:50px;
   font-size:10px;
 }
 
