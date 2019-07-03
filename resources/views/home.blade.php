@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="/">Your PAGE CLICK HERE</a>
                 </div>
             </div>
         </div>
