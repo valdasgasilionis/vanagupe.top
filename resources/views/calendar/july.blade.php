@@ -27,7 +27,7 @@
             @if (auth()->check())
                 <form action="/edit" method="POST">
                     @csrf
-                <input type="text" name="id" value="{{$rentals[$i-1]->id}}" readonly>
+                <input type="hidden" name="id" value="{{$rentals[$i-1]->id}}">
                   <input class="admin" type="text" name="price" value="{{$rentals[$i-1]->price}}">
                 </br>
                   <input class="admin" type="date" name="date" value="{{$rentals[$i-1]->date}}" readonly>
