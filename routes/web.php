@@ -28,5 +28,15 @@ Route::post('/edit', function(Request $request) {
     $rental[0]->save();
     return back();
 });
+Route::post('/reserved', function(Request $request) {
+    $rental = rental::where('id', $request->id)->get();
+    if ($rental[0]->reserved === 0) {
+        $rental[0]->reserved = 1;
+    } else {
+        $rental[0]->reserved = 0;
+    }  
+    $rental[0]->save();
+    return back();
+});
 
 
