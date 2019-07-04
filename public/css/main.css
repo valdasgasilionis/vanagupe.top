@@ -189,11 +189,7 @@ body {
 }
 
 
-/* Hide the images by default */
-
-.mySlides {
-    display: none;
-}
+/* Hide months by default */
 
 
 /* Next & previous buttons */
