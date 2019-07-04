@@ -55,6 +55,31 @@
         </nav>
         
         @yield('body')      
-        
+        <script>
+                function displayJuly() {
+                    document.getElementById("july").style.display = "block";
+                    document.getElementById("august").style.display = "none";
+                    document.getElementById("september").style.display = "none";
+                    document.getElementById("october").style.display = "none";                
+                }
+                function displayAugust() {
+                    document.getElementById("july").style.display = "none";
+                    document.getElementById("august").style.display = "block";
+                    document.getElementById("september").style.display = "none";
+                    document.getElementById("october").style.display = "none";           
+                }
+                function displaySeptember() {
+                    document.getElementById("july").style.display = "none";
+                    document.getElementById("august").style.display = "none";
+                    document.getElementById("september").style.display = "block";
+                    document.getElementById("october").style.display = "none";               
+                }
+                function displayOctober() {
+                    document.getElementById("july").style.display = "none";
+                    document.getElementById("august").style.display = "none";
+                    document.getElementById("september").style.display = "none";
+                    document.getElementById("october").style.display = "block";              
+                }
+            </script>
     </body>
 </html>

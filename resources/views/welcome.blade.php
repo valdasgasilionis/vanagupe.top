@@ -13,63 +13,60 @@
                     provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
                     </p>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-secondary"  onclick="displayJuly()">July</button>
-                    <button type="button" class="btn btn-secondary"  onclick="displayAugust()">August</button>
-                    <button type="button" class="btn btn-secondary"  onclick="displaySeptember()">September</button>
-                    <button type="button" class="btn btn-secondary"  onclick="displayOctober()">October</button>
+                <div class="monthslinks">
+                    <button  onclick="displayJuly()">July</button>
+                    <button  onclick="displayAugust()">August</button>
+                    <button  onclick="displaySeptember()">September</button>
+                    <button  onclick="displayOctober()">October</button>
+                        <span class="booked"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &#9940;  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span class="price">XX &euro;</span>
+                        <span class="price">  price in EUR/day. Additional final cleaning fee 30 EUR.</span>
+
                 </div>
                 
-                                <div id="july" style="display:block">
-                                    @include('calendar.july')
-                                </div>      
-                                <div id="august" style="display:none">
-                                    @include('calendar.august')         
-                                </div>               
-                                <div id="september" style="display:none">
-                                    @include('calendar.september')     
-                                </div>         
-                                <div id="october" style="display:none">
-                                    @include('calendar.october')                   
-                                </div>       
-                    </div>              
+                <div id="july" style="display:block">
+                    @include('calendar.july')
+                </div>      
+                <div id="august" style="display:none">
+                    @include('calendar.august')         
+                </div>               
+                <div id="september" style="display:none">
+                    @include('calendar.september')     
+                </div>         
+                <div id="october" style="display:none">
+                    @include('calendar.october')                   
+                </div>       
+            </div>              
                
-            </div>
             {{-- right side of the page --}}
             <div class="col-sm-4">
-                <div class="images">
-                    <img src="Palanga.jpg" style="width:150px;height:auto">
+                <div class="row">
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe1.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe3.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe4.jpg" style="width:100%;height:auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe5.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-6 myimages">
+                        <img src="vanagupe6.jpg" style="width:100%;height:auto">
+                    </div>
                 </div>
             </div>
-        </div> 
-         
-
-            {{-- carousel script below --}}
-                    
-        <script>
-            function displayJuly() {
-                document.getElementById("july").style.display = "block";
-                document.getElementById("august").style.display = "none";
-                document.getElementById("september").style.display = "none";
-                document.getElementById("october").style.display = "none";
-            }
-            function displayAugust() {
-                document.getElementById("july").style.display = "none";
-                document.getElementById("august").style.display = "block";
-                document.getElementById("september").style.display = "none";
-                document.getElementById("october").style.display = "none";
-            }
-            function displaySeptember() {
-                document.getElementById("july").style.display = "none";
-                document.getElementById("august").style.display = "none";
-                document.getElementById("september").style.display = "block";
-                document.getElementById("october").style.display = "none";
-            }
-            function displayOctober() {
-                document.getElementById("july").style.display = "none";
-                document.getElementById("august").style.display = "none";
-                document.getElementById("september").style.display = "none";
-                document.getElementById("october").style.display = "block";
-            }
-        </script>
+        </div>                 
+     
 @endsection
