@@ -17,10 +17,10 @@
           
           <ul class="days">  
             @for ($i = 1; $i < 32; $i++)
-              <li class="{{$rentals[$i-1]->reserved ? 'booked_days' : 'price_days'}}">{{$i}}</br>
+              <li class="{{$rentals[$i-1]->reserved ? 'booked_days' : 'price_days'}}">{{$i}}<br/>
                 <span class="{{$rentals[$i-1]->reserved ? 'booked' : 'price'}}">
                   @if ($rentals[$i-1]->reserved === 1)
-                      &#9940
+                      &#9940;
                   @else
                       {{$rentals[$i-1]->price}} &euro;
                   @endif   
@@ -29,12 +29,12 @@
                     @csrf
                 <input type="hidden" name="id" value="{{$rentals[$i-1]->id}}">
                   <input class="admin" type="text" name="price" value="{{$rentals[$i-1]->price}}">
-                </br>
+                <br/>
                   <input class="admin" type="date" name="date" value="{{$rentals[$i-1]->date}}" readonly>
-                </br>
+                <br/>
                   <input class="admin" type="submit" value="submit">
                 </form>
-              </br>
+              <br/>
                   reserved?
               <form action="/reserved" method="post">
                 @csrf

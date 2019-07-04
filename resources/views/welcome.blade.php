@@ -20,7 +20,7 @@
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                 <span class="booked"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &#9940  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &#9940;  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
                                 <span class="price">XX &euro;</span>
                                 <span class="price">  price in EUR/day. Additional final cleaning fee 30 EUR.</span>
@@ -76,7 +76,7 @@
             function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
+            /* var dots = document.getElementsByClassName("dot"); */
             /* this is the original code to loop cycle the frames */
             /*  if (n > slides.length) {slideIndex = 1} 
             if (n < 1) {slideIndex = slides.length} */
@@ -85,11 +85,11 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none"; 
             }
-            for (i = 0; i < dots.length; i++) {
+           /*  for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
-            }
+            } */
             slides[slideIndex-1].style.display = "block"; 
-            dots[slideIndex-1].className += " active";
+            /* dots[slideIndex-1].className += " active"; */
             }
         </script>
 @endsection
