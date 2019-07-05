@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use App\rental;
 use App\User;
+use App\Form;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,6 @@ Route::get('/', function () {
    /*  return $rentals; */
     return view('welcome', compact('rentals'));
 });
-Auth::routes();
 
 Route::post('/edit', function(Request $request) {
     $rental = rental::where('id', $request->id)->get();
@@ -41,7 +41,17 @@ Route::post('/reserved', function(Request $request) {
     
     return back();
 });
+Route::post('/form', function(Request $request) {
+  /*  return $request; */
+    $form = new Form;
+    $form->email = $request->email;
+    $form->name = $request->name;
+    $form->phone = $request->phone;
+    $form->message = $request->message;
 
+    $form->save();
+    return back();
+});
 
 
 Auth::routes();
