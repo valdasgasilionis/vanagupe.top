@@ -6,21 +6,23 @@
                       <h2>Vanagupe - your vacation oasis - RENT now!</h2>           
                 <div class="description">  
                     <div class="grid-container">                 
-                            <div><i class="fas fa-city"></i></div>
+                            <div><i class="fas fa-ruler-combined"></i></div>
                             <div>38 sq.m. 1 bedroom</div>
                             <div><i class="fa fa-bed"></i></div>
-                            <div>1 double bed, 1 sofa-bed(sleeps 2)</div>
+                            <div>1 double bed</div>
+                            <div><i class="fa fa-couch"></i></div>
+                            <div>double sofa-bed</div>
                             <div><i class="fa fa-shower"></i></div>
-                            <div>full bathromm</div>
-                            <div><i class="fa fa-utensils"></i></div>
+                            <div>full bathroom</div>
+                            <div><i class="fas fa-mug-hot"></i></div>
                             <div>full kitchen with dishwasher</div>
-                            <div><i class="fa fa-fan"></i></div>
+                            <div><i class="fas fa-snowflake"></i></div>
                             <div>air conditinioners (2 zones)</div>
                             <div><i class="fa fa-tv"></i></div>
                             <div>50" lcd tv</div>
-                            <div><i class="fa fa-glass-cheers"></i></div>
+                            <div><i class="	fas fa-glass-cheers"></i></div>
                             <div>balcony</div>
-                            <div><i class="fa fa-automobile"></i></div>
+                            <div><i class="fas fa-car-alt"></i></div>
                             <div>parking spot</div>
                     </div>                    
                 </div>
