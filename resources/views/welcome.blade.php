@@ -68,7 +68,7 @@
                 </div>
                 <div class="row">
                     <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,
-                     21.0683849&zoom=13&size=400x400&scale=1&maptype=roadmap&markers=color:green%7Clabel:%7C55.936528,
+                     21.0683849&zoom=14&size=500x400&scale=1&maptype=roadmap&markers=color:green%7ClabelV:%7C55.936528,
                       21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
                 <div class="row">
