@@ -27,16 +27,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/instructions">Instructions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/privacy">Privacy</a>
-                </li>          
+              {{--   <ul class="navbar-nav mr-auto float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/privacy">Privacy</a>
+                    </li>          
                 
-                </ul>
-                    <div class="flex-center position-ref full-height">
+                </ul> --}}
+                 {{--    <div class="flex-center position-ref full-height">
                         @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
@@ -44,13 +41,13 @@
                                 @else
                                     <a href="{{ route('login') }}">Admin</a>
 
-                            {{--      @if (Route::has('register'))
+                                 @if (Route::has('register'))
                                         <a href="{{ route('register') }}">Register</a>
-                                    @endif --}}
+                                    @endif
                                 @endauth
                             </div>
                         @endif
-                    </div>                
+                    </div>  --}}               
             </div>
         </nav>
         
