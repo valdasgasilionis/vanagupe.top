@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263, 21.0683849&zoom=12&size=600x600&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263, 21.0683849&zoom=16&size=300x300&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
                 <div class="row">
                     &nbsp;
