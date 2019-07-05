@@ -35,7 +35,7 @@
                             &#9940;  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </span>
                         <span class="price">XX &euro;</span>
-                        <span class="price">  price in EUR/day. Additional final cleaning fee 30 EUR.</span>
+                        <span class="price">  price in EUR/day.</span>
 
                 </div>
                 
