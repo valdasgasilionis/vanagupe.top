@@ -60,25 +60,45 @@
                     document.getElementById("july").style.display = "block";
                     document.getElementById("august").style.display = "none";
                     document.getElementById("september").style.display = "none";
-                    document.getElementById("october").style.display = "none";                
+                    document.getElementById("october").style.display = "none"; 
+                /* change button color */
+                    document.getElementById("julybutton").style.backgroundColor = "rgba(176, 208, 175, 0.67)"; 
+                    document.getElementById("augustbutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("septemberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";
+                    document.getElementById("octoberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";             
                 }
                 function displayAugust() {
                     document.getElementById("july").style.display = "none";
                     document.getElementById("august").style.display = "block";
                     document.getElementById("september").style.display = "none";
-                    document.getElementById("october").style.display = "none";           
+                    document.getElementById("october").style.display = "none";  
+                     /* change button color */
+                    document.getElementById("julybutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("augustbutton").style.backgroundColor = "rgba(176, 208, 175, 0.67)"; 
+                    document.getElementById("septemberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";
+                    document.getElementById("octoberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";         
                 }
                 function displaySeptember() {
                     document.getElementById("july").style.display = "none";
                     document.getElementById("august").style.display = "none";
                     document.getElementById("september").style.display = "block";
-                    document.getElementById("october").style.display = "none";               
+                    document.getElementById("october").style.display = "none";       
+                     /* change button color */
+                    document.getElementById("julybutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("augustbutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("septemberbutton").style.backgroundColor = "rgba(176, 208, 175, 0.67)";
+                    document.getElementById("octoberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";        
                 }
                 function displayOctober() {
                     document.getElementById("july").style.display = "none";
                     document.getElementById("august").style.display = "none";
                     document.getElementById("september").style.display = "none";
-                    document.getElementById("october").style.display = "block";              
+                    document.getElementById("october").style.display = "block";  
+                     /* change button color */
+                    document.getElementById("julybutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("augustbutton").style.backgroundColor = "rgba(27, 101, 81, 1)"; 
+                    document.getElementById("septemberbutton").style.backgroundColor = "rgba(27, 101, 81, 1)";
+                    document.getElementById("octoberbutton").style.backgroundColor = "rgba(176, 208, 175, 0.67)";            
                 }
             </script>
     </body>

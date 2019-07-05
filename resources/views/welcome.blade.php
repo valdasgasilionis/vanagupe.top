@@ -14,10 +14,10 @@
                     </p>
                 </div>
                 <div class="monthslinks">
-                    <button  onclick="displayJuly()">July</button>
-                    <button  onclick="displayAugust()">August</button>
-                    <button  onclick="displaySeptember()">September</button>
-                    <button  onclick="displayOctober()">October</button>
+                    <button  id="julybutton" onclick="displayJuly()">July</button>
+                    <button  id="augustbutton" onclick="displayAugust()">August</button>
+                    <button  id="septemberbutton" onclick="displaySeptember()">September</button>
+                    <button id="octoberbutton" onclick="displayOctober()">October</button>
                         <span class="booked"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &#9940;  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </span>
