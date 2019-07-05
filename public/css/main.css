@@ -323,3 +323,16 @@
         .myimages {
             margin: 7px 0;
         }
+        
+        .description {
+            -webkit-column-count: 3;
+            /* Old Chrome, Safari and Opera */
+            -moz-column-count: 3;
+            /* Old Firefox */
+            column-count: 3;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 10% 90%;
+        }

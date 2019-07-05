@@ -2,16 +2,27 @@
     @section('body')
         <div class="row">
             {{-- left side of the page --}}
-            <div class="col-sm-8">                 
-                <div>
-                    <h2>Vanagupe - aprašymas čia</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
-                    nesciunt voluptatem commodi possimus quaerat minima sequi 
-                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellendus eos sapiente 
-                    nesciunt voluptatem commodi possimus quaerat minima sequi 
-                    provident asperiores modi consectetur, voluptate odio maxime. Quos fugit asperiores mollitia?
-                    </p>
+            <div class="col-sm-8"> 
+                      <h2>Vanagupe - your vacation oasis - RENT now!</h2>           
+                <div class="description">  
+                    <div class="grid-container">                 
+                            <div><i class="fas fa-city"></i></div>
+                            <div>38 sq.m. 1 bedroom</div>
+                            <div><i class="fa fa-bed"></i></div>
+                            <div>1 double bed, 1 sofa-bed(sleeps 2)</div>
+                            <div><i class="fa fa-shower"></i></div>
+                            <div>full bathromm</div>
+                            <div><i class="fa fa-utensils"></i></div>
+                            <div>full kitchen with dishwasher</div>
+                            <div><i class="fa fa-fan"></i></div>
+                            <div>air conditinioners (2 zones)</div>
+                            <div><i class="fa fa-tv"></i></div>
+                            <div>50" lcd tv</div>
+                            <div><i class="fa fa-glass-cheers"></i></div>
+                            <div>balcony</div>
+                            <div><i class="fa fa-automobile"></i></div>
+                            <div>parking spot</div>
+                    </div>                    
                 </div>
                 <div class="monthslinks">
                     <button  id="julybutton" onclick="displayJuly()">July</button>
