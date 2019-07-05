@@ -48,7 +48,28 @@
                 </div>         
                 <div id="october" style="display:none">
                     @include('calendar.october')                   
-                </div>       
+                </div> 
+                <div class="bg-info" style="padding:20px">
+                    <h5 style="text-align:center"><i>Submit Your Request</i></h5> 
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>   
+                            <div class="form-group">
+                                    <label for="exampleFormControlInput1">Phone</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+370-111-12345">
+                                    </div>                        
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Your request here</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning mb-2">Submit</button>
+                        </form>
+                </div> 
+                <div>
+                    &nbsp;
+                </div>     
             </div>              
                
             {{-- right side of the page --}}
