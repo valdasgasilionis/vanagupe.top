@@ -49,12 +49,12 @@
                         <img src="vanagupe6.jpg" style="width:100%;height:auto">
                     </div>
                 </div>
-                <div class="row">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=2000x400&scale=2&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+                {{-- <div class="row">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=800x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
                 <div class="row">
                     &nbsp;
-                </div>
+                </div> --}}
                 {{-- end images --}}
                
                  
@@ -88,7 +88,12 @@
                         @include('calendar.october')                   
                     </div>
                 {{-- end calendar --}}
-
+{{-- google map  --}}
+    <div class="row">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=800x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+    </div>
+   
+{{-- end google map --}}
                  {{-- request form --}}
                 
                  <div class="bg-info" style="padding:20px">
