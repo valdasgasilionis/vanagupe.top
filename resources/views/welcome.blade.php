@@ -26,31 +26,39 @@
                             <div>parking spot</div>
                     </div>                    
                 </div>
-                <div class="monthslinks">
-                    <button  id="julybutton" onclick="displayJuly()">July</button>
-                    <button  id="augustbutton" onclick="displayAugust()">August</button>
-                    <button  id="septemberbutton" onclick="displaySeptember()">September</button>
-                    <button id="octoberbutton" onclick="displayOctober()">October</button>
-                        <span class="booked"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &#9940;  Not available &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </span>
-                        <span class="price">XX &euro;</span>
-                        <span class="price">  price in EUR/day.</span>
-
+                {{-- images --}}
+                <div class="row">
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe1.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                    </div>        
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe3.jpg" style="width:100%;height:auto">
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe4.jpg" style="width:100%;height:auto">
+                    </div>                  
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe5.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe6.jpg" style="width:100%;height:auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=500x548&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+                {{-- end images --}}
+               
+                {{-- request form --}}
                 
-                <div id="july" style="display:block">
-                    @include('calendar.july')
-                </div>      
-                <div id="august" style="display:none">
-                    @include('calendar.august')         
-                </div>               
-                <div id="september" style="display:none">
-                    @include('calendar.september')     
-                </div>         
-                <div id="october" style="display:none">
-                    @include('calendar.october')                   
-                </div> 
                 <div class="bg-info" style="padding:20px">
                     <h5 style="text-align:center"><i>Submit Your Request</i></h5> 
                         <form action="/form" method="POST">
@@ -74,41 +82,68 @@
                 </div> 
                 <div>
                     &nbsp;
-                </div>     
+                </div>  
+                {{-- end request form --}}   
             </div>              
                
             {{-- right side of the page --}}
             <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe1.jpg" style="width:100%;height:auto">
+                {{-- calendar --}}
+                <div class="monthslinks">
+                    <span class="booked">&#9940;  Not available;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="price">XX &euro;</span>
+                            <span class="price">  price in EUR/day.</span><br/>
+                        <button  id="julybutton" onclick="displayJuly()">July</button>
+                        <button  id="augustbutton" onclick="displayAugust()">August</button>
+                        <button  id="septemberbutton" onclick="displaySeptember()">September</button>
+                        <button id="octoberbutton" onclick="displayOctober()">October</button>
+                            
+    
                     </div>
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                    
+                    <div id="july" style="display:block">
+                        @include('calendar.july')
+                    </div>      
+                    <div id="august" style="display:none">
+                        @include('calendar.august')         
+                    </div>               
+                    <div id="september" style="display:none">
+                        @include('calendar.september')     
+                    </div>         
+                    <div id="october" style="display:none">
+                        @include('calendar.october')                   
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe3.jpg" style="width:100%;height:auto">
-                    </div>
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe4.jpg" style="width:100%;height:auto">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe5.jpg" style="width:100%;height:auto">
-                    </div>
-                    <div class="col-sm-6 myimages">
-                        <img src="vanagupe6.jpg" style="width:100%;height:auto">
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=500x548&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
-                </div>
-                <div class="row">
-                    &nbsp;
-                </div>
+                {{-- end calendar --}}
+
+                 {{-- request form --}}
+                
+                 <div class="bg-info" style="padding:20px">
+                        <h5 style="text-align:center"><i>Submit Your Request</i></h5> 
+                            <form action="/form" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>   
+                                <div class="form-group">
+                                        <label for="exampleFormControlInput1">Phone</label>
+                                        <input type="text" class="form-control" name="phone" id="exampleFormControlInput1" placeholder="+370-111-12345" required>
+                                        <label for="exampleFormControlInput1">Your name</label>
+                                        <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Jonh Smith" required>
+                                </div>                        
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Your request here</label>
+                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning mb-2">Submit</button>
+                            </form>
+                    </div> 
+                    <div>
+                        &nbsp;
+                    </div>  
+                    {{-- end request form --}} 
+                
+                    
             </div>
         </div>                 
      

@@ -23,6 +23,12 @@ Route::get('/', function () {
    /*  return $rentals; */
     return view('welcome', compact('rentals'));
 });
+Route::get('/gallery', function() {
+    return view('gallery');
+});
+Route::get('/privacy', function() {
+    return view('privacy');
+});
 
 Route::post('/edit', function(Request $request) {
     $rental = rental::where('id', $request->id)->get();

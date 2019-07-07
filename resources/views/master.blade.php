@@ -27,14 +27,16 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-          {{--   <div class="collapse navbar-collapse" id="navbarCollapse"> --}}
-              {{--   <ul class="navbar-nav mr-auto float-right">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">Gallery</a>
+                    </li>  
                     <li class="nav-item">
                         <a class="nav-link" href="/privacy">Privacy</a>
-                    </li>          
-                
-                </ul> --}}
-                 {{--    <div class="flex-center position-ref full-height">
+                    </li>               
+                </ul>
+                   {{--  <div class="flex-center position-ref full-height">
                         @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
@@ -48,8 +50,8 @@
                                 @endauth
                             </div>
                         @endif
-                    </div>  --}}               
-           {{--  </div> --}}
+                    </div> --}}                
+            </div>
         </nav>
         
         @yield('body')      
