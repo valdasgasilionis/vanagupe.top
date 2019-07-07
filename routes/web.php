@@ -51,13 +51,16 @@ Route::post('/reserved', function(Request $request) {
 });
 Route::post('/form', function(Request $request) {
   /*  return $request; */
+  if ($request->privacy == 1) {
     $form = new Form;
     $form->email = $request->email;
     $form->name = $request->name;
     $form->phone = $request->phone;
     $form->message = $request->message;
 
-    $form->save();
+    $form->save(); 
+ 
+    
 
     $SesClient = new SesClient([
         'profile' => 'default',
@@ -118,7 +121,10 @@ try {
     echo("The email was not sent. Error message: ".$e->getAwsErrorMessage()."\n");
     echo "\n";
 }
-    return back();
+ } else {
+    return back(); 
+ }
+    
 });
 
 
