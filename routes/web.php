@@ -50,8 +50,8 @@ Route::post('/reserved', function(Request $request) {
     return back();
 });
 Route::post('/form', function(Request $request) {
-  /*  return $request; */
-  if ($request->privacy == 1) {
+   return $request;
+  if ($request->privacy = 'on') {
     $form = new Form;
     $form->email = $request->email;
     $form->name = $request->name;
