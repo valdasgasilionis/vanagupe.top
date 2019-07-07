@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" name="privacy">
-                                    <label for="privacy">I agree to <a href="/privacy">Privacy Policy</a></label>
+                                    <label for="privacy">I agree to <a href="/privacy" style="color:red">Privacy Policy</a></label>
                                     
                                 </div>
                                 <button type="submit" class="btn btn-warning mb-2">Submit</button>
