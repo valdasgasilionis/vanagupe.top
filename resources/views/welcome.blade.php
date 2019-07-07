@@ -50,40 +50,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=500x548&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=900x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
                 <div class="row">
                     &nbsp;
                 </div>
                 {{-- end images --}}
                
-                {{-- request form --}}
-                
-                <div class="bg-info" style="padding:20px">
-                    <h5 style="text-align:center"><i>Submit Your Request</i></h5> 
-                        <form action="/form" method="POST">
-                            @csrf
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
-                            </div>   
-                            <div class="form-group">
-                                    <label for="exampleFormControlInput1">Phone</label>
-                                    <input type="text" class="form-control" name="phone" id="exampleFormControlInput1" placeholder="+370-111-12345" required>
-                                    <label for="exampleFormControlInput1">Your name</label>
-                                    <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Jonh Smith" required>
-                            </div>                        
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Your request here</label>
-                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-warning mb-2">Submit</button>
-                        </form>
-                </div> 
-                <div>
-                    &nbsp;
-                </div>  
-                {{-- end request form --}}   
+                 
             </div>              
                
             {{-- right side of the page --}}
