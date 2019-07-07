@@ -62,7 +62,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe10.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe14.jpg" style="width:100%;height:auto">
                     </div>                  
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe11.jpg" style="width:100%;height:auto">
