@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=900x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=1400x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
                 <div class="row">
                     &nbsp;
