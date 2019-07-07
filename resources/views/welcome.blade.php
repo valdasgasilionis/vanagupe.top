@@ -49,6 +49,28 @@
                         <img src="vanagupe6.jpg" style="width:100%;height:auto">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe7.jpg" style="width:100%;height:auto">
+                    </div>                  
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe8.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe9.jpg" style="width:100%;height:auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe10.jpg" style="width:100%;height:auto">
+                    </div>                  
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe11.jpg" style="width:100%;height:auto">
+                    </div>
+                    <div class="col-sm-4 myimages">
+                        <img src="vanagupe12.jpg" style="width:100%;height:auto">
+                    </div>
+                </div>
                 {{-- <div class="row">
                     <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=800x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4">
                 </div>
