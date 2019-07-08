@@ -1,9 +1,9 @@
 <?php
     return [
-        'name' => 'VANAGUPE',
+        'name' => 'Home',
         'img' => 'Gallery',
         'privacy' => 'Privacy Policy',
-        'Host' => 'Host',
+        'Host' => 'Contact host',
         'Title' => 'Vanagupe - your vacation oasis - RENT now!',
         'new_construction' =>'New construction (2019)',
         'see' => '300m to the sea',

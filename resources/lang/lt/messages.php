@@ -1,9 +1,9 @@
 <?php
     return [
-        'name' => 'VANAGUPĖ',
+        'name' => 'Pradžia',
         'img' => 'Galerija',
         'privacy' => 'Privatumo Politika',
-        'Host' => 'Šeimininkė',
+        'Host' => 'Kontaktas pasiteiravimui',
         'Title' => 'Vanagupė - jūsų poilsio oazė - išsinuomokite dabar!',
         'new_construction' => 'Nauja statyba - 2019m.',
         'see' => '300 metrų iki jūros',
