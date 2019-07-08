@@ -9,7 +9,7 @@
         'see' => '300m to the sea',
         'floor' => 'Top floor (4th)',
         'luxury' => 'Luxury finishes',
-        'wifi' => 'Wifi, cable, Security',
+        'wifi' => 'Wifi, Cable, Security',
         'area' => '38 sq.m. 1 bedroom',
         'bed' => '1 double bed',
         'sofa' => 'double sofa-bed',
