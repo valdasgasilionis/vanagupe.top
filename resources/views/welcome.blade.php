@@ -5,7 +5,17 @@
             <div class="col-sm-8"> 
                       <h2>Vanagupe - your vacation oasis - RENT now!</h2>           
                 <div class="description">  
-                    <div class="grid-container">                 
+                    <div class="grid-container">  
+                            <div><i class="fas fa-box-open"></i></div>
+                            <div>New construction (2019)</div> 
+                            <div><i class="fas fa-water"></i></div>
+                            <div>300m to the sea</div>   
+                            <div><i class="far fa-building"></i></div>
+                            <div>Top floor (4th)</div>  
+                            <div><i class="far fa-gem"></i></div>
+                            <div>Luxury finishes</div> 
+                            <div><i class="fas fa-wifi"></i></div>
+                            <div>Wifi, cable, Security</div>                                       
                             <div><i class="fas fa-ruler-combined"></i></div>
                             <div>38 sq.m. 1 bedroom</div>
                             <div><i class="fa fa-bed"></i></div>
@@ -18,6 +28,8 @@
                             <div>full kitchen with dishwasher</div>
                             <div><i class="fas fa-snowflake"></i></div>
                             <div>air conditinioners (2 zones)</div>
+                            <div><i class="fas fa-exchange-alt"></i></div>
+                            <div>air recuperation</div>
                             <div><i class="fa fa-tv"></i></div>
                             <div>50" lcd tv</div>
                             <div><i class="	fas fa-glass-cheers"></i></div>
