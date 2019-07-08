@@ -41,10 +41,10 @@
                 {{-- images --}}
                 <div class="row">
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe1.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe6.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe11.jpg" style="width:100%;height:auto">
                     </div>        
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe3.jpg" style="width:100%;height:auto">
@@ -55,10 +55,10 @@
                         <img src="vanagupe4.jpg" style="width:100%;height:auto">
                     </div>                  
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe5.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe9.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe6.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe1.jpg" style="width:100%;height:auto">
                     </div>
                 </div>
                 <div class="row">
@@ -69,15 +69,15 @@
                         <img src="vanagupe8.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe9.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe5.jpg" style="width:100%;height:auto">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe14.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
                     </div>                  
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe11.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe14.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe12.jpg" style="width:100%;height:auto">
