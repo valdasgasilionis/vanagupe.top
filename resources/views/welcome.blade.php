@@ -116,7 +116,7 @@
                 {{-- end calendar --}}
 {{-- google map  --}}
     <div class="row">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=800x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key=AIzaSyBb5m5WtZIBfPUSyWFwFrlOQ7d6I3o4zR4" style="width:100%; padding:10px 15px">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9364263,21.0683849&zoom=14&size=800x400&maptype=roadmap&markers=size:small%7Ccolor:green%7C55.936528,21.069650&key={{config('app.google_api_key')}}" style="width:100%; padding:10px 15px">
     </div>
    
 {{-- end google map --}}
