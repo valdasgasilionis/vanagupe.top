@@ -306,3 +306,9 @@
                 font-size: 3.5rem;
             }
         }
+        
+        .image-gallery {
+            width: 80%;
+            margin: auto;
+            padding: 10px 0;
+        }

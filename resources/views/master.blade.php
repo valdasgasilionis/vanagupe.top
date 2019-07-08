@@ -36,8 +36,9 @@
                         <a class="nav-link" href="/privacy">Privacy</a>
                     </li>               
                 </ul>
-                   {{--  <div class="flex-center position-ref full-height">
-                        @if (Route::has('login'))
+                    <div class="flex-center position-ref full-height">
+                        <span style="color:#fff;line-height:2">Host:Rugilė;&nbsp;&nbsp;&nbsp;<i>email:gabute@yahoo.com;&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
+                       {{--  @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
                                     <a href="{{ url('/home') }}">Home</a>
@@ -49,8 +50,8 @@
                                     @endif
                                 @endauth
                             </div>
-                        @endif
-                    </div> --}}                
+                        @endif --}}
+                    </div>                
             </div>
         </nav>
         
