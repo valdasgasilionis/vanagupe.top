@@ -17,7 +17,7 @@ Slapuką sudaro informacija, tinklo tarnybinės stoties siunčiama interneto nar
  ir laikoma naršyklės. Ši informacija vėliau siunčiama atgal tarnybinei stočiai kaskart 
  kai naršyklė paprašo puslapio iš tos tarnybinės stoties. Tai leidžia tai tinklo 
  tarnybinei stočiai identifikuoti ir sekti interneto naršyklę. Mes naudojame
-  Google Analytics naudojimuisi šia interneto svetaine analizuoti. Google Analytics
+  Google Analytics bei Amazon AWS sistemomis šią interneto svetainę analizuoti. Google Analytics
    generuoja statistinę ir kitą informaciją apie naudojimąsi svetaine panaudodama 
    slapukus, kurie laikomi vartotojų kompiuteriuose. Generuojama su mūsų interneto
     svetaine susijusi informacija yra naudojama kurti ataskaitas apie naudojimąsi
