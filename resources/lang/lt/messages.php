@@ -14,7 +14,7 @@
         'bed' => 'Dvigulė lova',
         'sofa' => 'Sofa-lova (dvigulė)',
         'bath' => 'Vonia su dušo kabina',
-        'kitchen' => 'Vonia su dušo kabina',
+        'kitchen' => 'Virtuvė su indaplove',
         'a/c' => 'oro kondicionierius (2 zonų)',
         'recup' => 'rekuperatorius',
         'lcd' => '50" lcd TV',
