@@ -17,7 +17,12 @@ use App\Form;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('setlocale/{locale}', function ($locale) {
+    if (in_array($locale, \Config::get('app.locales'))) {
+      session(['locale' => $locale]);
+    }
+    return redirect()->back();
+  });
 Route::get('/', function () {
      $rentals = rental::all();
    /*  return $rentals; */

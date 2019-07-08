@@ -3,39 +3,39 @@
         <div class="row">
             {{-- left side of the page --}}
             <div class="col-sm-8"> 
-                      <h2>Vanagupe - your vacation oasis - RENT now!</h2>           
+                      <h2>@lang('messages.Title')</h2>           
                 <div class="description">  
                     <div class="grid-container">  
                             <div><i class="fas fa-box-open"></i></div>
-                            <div>New construction (2019)</div> 
+                            <div>@lang('messages.new_construction')</div> 
                             <div><i class="fas fa-water"></i></div>
-                            <div>300m to the sea</div>   
+                            <div>@lang('messages.see')</div>   
                             <div><i class="far fa-building"></i></div>
-                            <div>Top floor (4th)</div>  
+                            <div>@lang('messages.floor')</div>  
                             <div><i class="far fa-gem"></i></div>
-                            <div>Luxury finishes</div> 
+                            <div>@lang('messages.luxury')</div> 
                             <div><i class="fas fa-wifi"></i></div>
-                            <div>Wifi, cable, Security</div>                                       
+                            <div>@lang('messages.wifi')</div>                                       
                             <div><i class="fas fa-ruler-combined"></i></div>
-                            <div>38 sq.m. 1 bedroom</div>
+                            <div>@lang('messages.area')</div>
                             <div><i class="fa fa-bed"></i></div>
-                            <div>1 double bed</div>
+                            <div>@lang('messages.bed')</div>
                             <div><i class="fa fa-couch"></i></div>
-                            <div>double sofa-bed</div>
+                            <div>@lang('messages.sofa')</div>
                             <div><i class="fa fa-shower"></i></div>
-                            <div>full bathroom</div>
+                            <div>@lang('messages.bath')</div>
                             <div><i class="fas fa-mug-hot"></i></div>
-                            <div>full kitchen with dishwasher</div>
+                            <div>@lang('messages.kitchen')</div>
                             <div><i class="fas fa-snowflake"></i></div>
-                            <div>air conditinioners (2 zones)</div>
+                            <div>@lang('messages.a/c')</div>
                             <div><i class="fas fa-exchange-alt"></i></div>
-                            <div>air recuperation</div>
+                            <div>@lang('messages.recup')</div>
                             <div><i class="fa fa-tv"></i></div>
-                            <div>50" lcd tv</div>
+                            <div>@lang('messages.lcd')</div>
                             <div><i class="	fas fa-glass-cheers"></i></div>
-                            <div>balcony</div>
+                            <div>@lang('messages.balcony')</div>
                             <div><i class="fas fa-car-alt"></i></div>
-                            <div>parking spot</div>
+                            <div>@lang('messages.parking')</div>
                     </div>                    
                 </div>
                 {{-- images --}}

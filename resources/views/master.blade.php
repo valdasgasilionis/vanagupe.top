@@ -23,21 +23,27 @@
     </head>
     <body>        
         <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-            <a class="navbar-brand" href="/">VANAGUPE</a>
+            <a class="navbar-brand" href="/">@lang('messages.name')</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto float-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="/gallery">Gallery</a>
+                        <a class="nav-link" href="/gallery">@lang('messages.img')</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link" href="/privacy">Privacy</a>
-                    </li>               
+                        <a class="nav-link" href="/privacy">@lang('messages.privacy')</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="setlocale/lt"><img src="lithuania.png"></a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="setlocale/en"><img src="england.png"></a>
+                    </li>              
                 </ul>
                     <div class="flex-center position-ref full-height">
-                        <span style="color:#fff;line-height:2">Host:Rugilė;&nbsp;&nbsp;&nbsp;<i>email:gabute@yahoo.com;&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
+                        <span style="color:#fff;line-height:2">@lang('messages.Host'):Rugilė;&nbsp;&nbsp;&nbsp;<i>email:gabute@yahoo.com;&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
                        {{--  @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
