@@ -1,6 +1,6 @@
 <?php
     return [
-        'name' => 'Home',
+        'first' => 'Home',
         'img' => 'Gallery',
         'privacy' => 'Privacy Policy',
         'Host' => 'Contact host',
@@ -20,5 +20,25 @@
         'lcd' => '50" lcd tv',
         'balcony' => 'balcony',
         'parking' => 'parking spot',
+        'not_available' => 'Not available;',
+        'price' => 'price in EUR/day.',
+        'july' => 'july',
+        'august' => 'august',
+        'september' => 'september',
+        'october' => 'october',
+        'equiry' => 'Submit Your Inquiry',
+        'email' => 'Email address',
+        'phone' => 'Your phone number',
+        'name' => 'Your name',
+        'message' => 'Your message here',
+        'agree' => 'I agree to ',
+        'submit' => 'submit',
+        'monday' => 'Mo',
+        'tuesday' => 'Tu',
+        'wednesday' => 'We',
+        'thursday' => 'Th',
+        'friday' => 'Fr',
+        'saturday' => 'Sa',
+        'sunday' => 'Su',
     ]
 ?>

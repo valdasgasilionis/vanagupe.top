@@ -1,19 +1,19 @@
 <div class="month">      
         <ul>
             <li>
-            <i>October</i><span style="font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
+            <i>@lang('october')</i><span style="font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
             </li>
         </ul>
     </div>
           
           <ul class="weekdays">
-            <li>Mo</li>
-            <li>Tu</li>
-            <li>We</li>
-            <li>Th</li>
-            <li>Fr</li>
-            <li>Sa</li>
-            <li>Su</li>
+              <li>@lang('messages.monday')</li>
+              <li>@lang('messages.tuesday')</li>
+              <li>@lang('messages.wednesday')</li>
+              <li>@lang('messages.thursday')</li>
+              <li>@lang('messages.friday')</li>
+              <li>@lang('messages.saturday')</li>
+              <li>@lang('messages.sunday')</li>
           </ul>
           
           <ul class="days">  

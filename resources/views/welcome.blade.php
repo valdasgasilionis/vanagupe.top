@@ -90,13 +90,13 @@
             <div class="col-sm-4">
                 {{-- calendar --}}
                 <div class="monthslinks">
-                    <span class="booked">&#9940;  Not available;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="booked">&#9940;@lang('messages.not_available')</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="price">XX &euro;</span>
-                            <span class="price">  price in EUR/day.</span><br/>
-                        <button  id="julybutton" onclick="displayJuly()">July</button>
-                        <button  id="augustbutton" onclick="displayAugust()">August</button>
-                        <button  id="septemberbutton" onclick="displaySeptember()">September</button>
-                        <button id="octoberbutton" onclick="displayOctober()">October</button>
+                            <span class="price">@lang('messages.price')</span><br/>
+                        <button  id="julybutton" onclick="displayJuly()">@lang('messages.july')</button>
+                        <button  id="augustbutton" onclick="displayAugust()">@lang('messages.august')</button>
+                        <button  id="septemberbutton" onclick="displaySeptember()">@lang('messages.september')</button>
+                        <button id="octoberbutton" onclick="displayOctober()">@lang('messages.october')</button>
                             
     
                     </div>
@@ -123,36 +123,35 @@
                  {{-- request form --}}
                 
                  <div class="bg-info" style="padding:20px">
-                        <h5 style="text-align:center"><i>Send Your inquiry</i></h5> 
+                        <h5 style="text-align:center"><i>@lang('messages.equiry')</i></h5> 
                             <form action="/form" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <label for="exampleFormControlInput1">@lang('messages.email')</label>
                                     <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
                                 </div>   
                                 <div class="form-group">
-                                        <label for="exampleFormControlInput1">Phone</label>
+                                        <label for="exampleFormControlInput1">@lang('messages.phone')</label>
                                         <input type="text" class="form-control" name="phone" id="exampleFormControlInput1" placeholder="+370-111-12345" required>
-                                        <label for="exampleFormControlInput1">Your name</label>
+                                        <label for="exampleFormControlInput1">@lang('messages.name')</label>
                                         <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Jonh Smith" required>
                                 </div>                        
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Your request here</label>
+                                    <label for="exampleFormControlTextarea1">@lang('messages.message')</label>
                                     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" name="privacy">
-                                    <label for="privacy">I agree to <a href="/privacy" style="color:red">Privacy Policy</a></label>
+                                    <label for="privacy">@lang('messages.agree')<a href="/privacy" style="color:red">@lang('messages.privacy')</a></label>
                                     
                                 </div>
-                                <button type="submit" class="btn btn-warning mb-2">Submit</button>
+                                <button type="submit" class="btn btn-warning mb-2">@lang('messages.submit')</button>
                             </form>
                     </div> 
                     <div>
                         &nbsp;
                     </div>  
-                    {{-- end request form --}} 
-                
+                    {{-- end request form --}}                
                     
             </div>
         </div>                 

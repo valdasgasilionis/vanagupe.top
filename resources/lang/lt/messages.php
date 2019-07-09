@@ -1,6 +1,6 @@
 <?php
     return [
-        'name' => 'Pradžia',
+        'first' => 'Pradžia',
         'img' => 'Galerija',
         'privacy' => 'Privatumo Politika',
         'Host' => 'Kontaktas pasiteiravimui',
@@ -20,5 +20,18 @@
         'lcd' => '50" lcd TV',
         'balcony' => 'balkonas',
         'parking' => 'parkavimo vieta',
+        'not_available' => 'užimta;',
+        'price' => 'kaina Eur/d.',
+        'july' => 'liepa',
+        'august' => 'rugpjūtis',
+        'september' => 'rugsėjis',
+        'october' => 'spalis',
+        'equiry' => 'Siųskite užklausą',
+        'email' => 'Jūsų e-paštas',
+        'phone' => 'Jūsų telefonas',
+        'name' => 'Jūsų vardas',
+        'message' => 'Jūsų žinutė čia',
+        'agree' => 'Sutinku su ',
+        'submit' => 'Siųsti',
     ]
 ?>
