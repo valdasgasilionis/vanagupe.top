@@ -62,6 +62,17 @@
                     </div>
                 </div>
                 <div class="row">
+                        <div class="col-sm-4 myimages">
+                            <img src="vanagupe18.jpg" style="width:100%;height:auto">
+                        </div>                  
+                        <div class="col-sm-4 myimages">
+                            <img src="vanagupe19.jpg" style="width:100%;height:auto">
+                        </div>
+                        <div class="col-sm-4 myimages">
+                            <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                        </div>
+                    </div>
+                <div class="row">
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe7.jpg" style="width:100%;height:auto">
                     </div>                  
@@ -74,10 +85,10 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe2.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe14.jpg" style="width:100%;height:auto">
                     </div>                  
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe14.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe13.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe12.jpg" style="width:100%;height:auto">

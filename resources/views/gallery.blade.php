@@ -47,4 +47,10 @@
         <div class="image-gallery">
             <img src="vanagupe17_large.jpg" style="width:100%; height:auto">
         </div>
+        <div class="image-gallery">
+            <img src="vanagupe18_large.jpg" style="width:100%; height:auto">
+        </div>
+        <div class="image-gallery">
+            <img src="vanagupe19_large.jpg" style="width:100%; height:auto">
+        </div>
     @endsection
