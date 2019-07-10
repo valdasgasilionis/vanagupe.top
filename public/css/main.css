@@ -163,7 +163,7 @@
             }
             .grid-container {
                 display: grid;
-                grid-template-columns: 20% 80%;
+                grid-template-columns: 30% 70%;
             }
         }
         
@@ -177,7 +177,7 @@
             }
             .grid-container {
                 display: grid;
-                grid-template-columns: 25% 75%;
+                grid-template-columns: 35% 65%;
             }
         }
         
@@ -188,7 +188,7 @@
             }
             .grid-container {
                 display: grid;
-                grid-template-columns: 30% 70%;
+                grid-template-columns: 40% 60%;
             }
         }
         /* Slideshow container */
@@ -253,7 +253,7 @@
         
         .grid-container {
             display: grid;
-            grid-template-columns: 20% 80%;
+            grid-template-columns: 25% 75%;
         }
         
         .bd-placeholder-img {
