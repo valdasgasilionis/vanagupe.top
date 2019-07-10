@@ -5,7 +5,7 @@
             <div class="col-sm-8"> 
                       <h2>@lang('messages.Title')</h2>           
                 <div class="description">  
-                    <div class="valdas-grid-container">  
+                    <div class="valdas">  
                             <div><i class="fas fa-box-open"></i></div>
                             <div>@lang('messages.new_construction')</div> 
                             <div><i class="fas fa-water"></i></div>

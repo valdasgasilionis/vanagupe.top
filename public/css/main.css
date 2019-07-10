@@ -161,7 +161,7 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
-            .valdas-grid-container {
+            .valdas {
                 display: grid;
                 grid-template-columns: 30% 70%;
             }
@@ -175,7 +175,7 @@
             .days li .active {
                 padding: 2px;
             }
-            .valdas-grid-container {
+            .valdas {
                 display: grid;
                 grid-template-columns: 35% 65%;
             }
@@ -186,7 +186,7 @@
             .days li {
                 width: 11.8%;
             }
-            .valdas-grid-container {
+            .valdas {
                 display: grid;
                 grid-template-columns: 40% 60%;
             }
@@ -251,7 +251,7 @@
             padding: 10px 0;
         }
         
-        .valdas-grid-container {
+        .valdas {
             display: grid;
             grid-template-columns: 25% 75%;
         }
