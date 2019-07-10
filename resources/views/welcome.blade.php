@@ -88,7 +88,7 @@
                         <img src="vanagupe14.jpg" style="width:100%;height:auto">
                     </div>                  
                     <div class="col-sm-4 myimages">
-                        <img src="vanagupe13.jpg" style="width:100%;height:auto">
+                        <img src="vanagupe15.jpg" style="width:100%;height:auto">
                     </div>
                     <div class="col-sm-4 myimages">
                         <img src="vanagupe12.jpg" style="width:100%;height:auto">
