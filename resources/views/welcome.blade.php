@@ -159,8 +159,8 @@
                                 <button type="submit" class="btn btn-warning mb-2">@lang('messages.submit')</button>
                             </form>
                     </div> 
-                    <div>
-                        &nbsp;
+                    <div class="bg-info text-center">
+                            <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
                     </div>  
                     {{-- end request form --}}                
                     

@@ -43,7 +43,7 @@
                     </li>              
                 </ul>
                     <div class="flex-center position-ref full-height">
-                        <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
+                        
                        {{--  @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth

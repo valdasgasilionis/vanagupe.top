@@ -2,7 +2,7 @@
     return [
         'first' => 'Pradžia',
         'img' => 'Galerija',
-        'privacy' => 'Privatumo Politika',
+        'privacy' => 'Privatumas',
         'Host' => 'Kontaktas pasiteiravimui',
         'Title' => 'Vanagupė - jūsų poilsio oazė - išsinuomokite dabar!',
         'new_construction' => 'Nauja statyba - 2019m.',

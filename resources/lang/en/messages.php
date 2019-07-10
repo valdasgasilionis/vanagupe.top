@@ -2,7 +2,7 @@
     return [
         'first' => 'Home',
         'img' => 'Gallery',
-        'privacy' => 'Privacy Policy',
+        'privacy' => 'Privacy',
         'Host' => 'Contact host',
         'Title' => 'Vanagupe - your vacation oasis - RENT now!',
         'new_construction' =>'New construction (2019)',
