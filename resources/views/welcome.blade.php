@@ -134,26 +134,26 @@
                  {{-- request form --}}
                 
                  <div class="bg-info" style="padding:20px">
-                        <h5 style="text-align:center"><i>@lang('messages.equiry')</i></h5> 
+                        <h6 style="text-align:center;color:#fff"><i>@lang('messages.equiry')</i></h6> 
                             <form action="/form" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="exampleFormControlInput1">@lang('messages.email')</label>
+                                    <label for="exampleFormControlInput1" style='color:#fff'>@lang('messages.email')</label>
                                     <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
                                 </div>   
                                 <div class="form-group">
-                                        <label for="exampleFormControlInput1">@lang('messages.phone')</label>
+                                        <label for="exampleFormControlInput1" style='color:#fff'>@lang('messages.phone')</label>
                                         <input type="text" class="form-control" name="phone" id="exampleFormControlInput1" placeholder="+370-111-12345" required>
-                                        <label for="exampleFormControlInput1">@lang('messages.name')</label>
+                                        <label for="exampleFormControlInput1" style='color:#fff'>@lang('messages.name')</label>
                                         <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Jonh Smith" required>
                                 </div>                        
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">@lang('messages.message')</label>
+                                    <label for="exampleFormControlTextarea1" style='color:#fff'>@lang('messages.message')</label>
                                     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" name="privacy">
-                                    <label for="privacy">@lang('messages.agree')<a href="/privacy" style="color:red">@lang('messages.policy')</a></label>
+                                    <label for="privacy" style='color:#fff'>@lang('messages.agree')<a href="/privacy" style="color:red">@lang('messages.policy')</a></label>
                                     
                                 </div>
                                 <button type="submit" class="btn btn-warning mb-2">@lang('messages.submit')</button>
