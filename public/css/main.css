@@ -165,6 +165,7 @@
                 display: grid;
                 grid-template-columns: 30% 70%;
                 font-size: 0.8rem;
+                font-weight: 600;
             }
         }
         
@@ -180,6 +181,7 @@
                 display: grid;
                 grid-template-columns: 35% 65%;
                 font-size: 0.7rem;
+                font-weight: 600;
             }
         }
         
@@ -192,6 +194,7 @@
                 display: grid;
                 grid-template-columns: 40% 60%;
                 font-size: 0.65rem;
+                font-weight: 600;
             }
         }
         /* Slideshow container */
@@ -257,6 +260,7 @@
         .valdas {
             display: grid;
             grid-template-columns: 25% 75%;
+            font-weight: 600;
         }
         
         .bd-placeholder-img {
