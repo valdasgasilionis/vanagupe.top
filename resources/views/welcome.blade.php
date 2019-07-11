@@ -160,7 +160,14 @@
                             </form>
                     </div> 
                     <div class="bg-info text-center">
-                            <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</i>tel:&nbsp;<b>+370-655-43401</b></span> 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <span style="color:#fff;line-height:2">tel:&nbsp;<b>+370-655-43401</b></span> 
+                            </div>
+                        </div>
                     </div>  
                     {{-- end request form --}}                
                     
