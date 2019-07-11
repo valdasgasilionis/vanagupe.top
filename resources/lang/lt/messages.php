@@ -33,5 +33,6 @@
         'message' => 'Jūsų žinutė čia',
         'agree' => 'Sutinku su ',
         'submit' => 'Siųsti',
+        'policy' => 'Privatumo Politika',
     ]
 ?>

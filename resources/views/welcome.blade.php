@@ -153,14 +153,14 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" name="privacy">
-                                    <label for="privacy">@lang('messages.agree')<a href="/privacy" style="color:red">@lang('messages.privacy')</a></label>
+                                    <label for="privacy">@lang('messages.agree')<a href="/privacy" style="color:red">@lang('messages.policy')</a></label>
                                     
                                 </div>
                                 <button type="submit" class="btn btn-warning mb-2">@lang('messages.submit')</button>
                             </form>
                     </div> 
                     <div class="bg-info text-center">
-                            <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</i>tel:<b>+370-655-43401</b></span> 
+                            <span style="color:#fff;line-height:2">@lang('messages.Host')&nbsp;&nbsp;</i>tel:&nbsp;<b>+370-655-43401</b></span> 
                     </div>  
                     {{-- end request form --}}                
                     

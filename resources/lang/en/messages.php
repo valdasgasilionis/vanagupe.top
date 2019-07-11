@@ -40,5 +40,6 @@
         'friday' => 'Fr',
         'saturday' => 'Sa',
         'sunday' => 'Su',
+        'policy' => 'Privacy Policy',
     ]
 ?>
