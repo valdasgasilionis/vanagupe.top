@@ -288,7 +288,7 @@
         }
         /*  @media (min-width: 768px) {} */
         
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:140px) {
             .image-gallery {
                 width: 100%;
                 margin: auto;
@@ -296,7 +296,7 @@
             }
         }
         
-        @media screen and (min-width:1025px) {
+        @media screen and (min-width:1401px) {
             .image-gallery {
                 width: 50%;
                 margin: auto;
