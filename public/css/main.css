@@ -198,7 +198,7 @@
             }
         }
         
-        @media screen and (min-width:1025px) {
+        @media screen and (min-width:1900px) {
             .image-gallery {
                 width: 60%;
             }
