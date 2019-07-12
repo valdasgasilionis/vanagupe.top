@@ -28,7 +28,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto float-right">
+                <ul class="navbar-nav mr-auto">
+                  
                     <li class="nav-item">
                         <a class="nav-link" href="/gallery">@lang('messages.img')</a>
                     </li>  
