@@ -288,8 +288,10 @@
         }
         /*  @media (min-width: 768px) {} */
         
-        .image-gallery {
-            width: 50%;
-            margin: auto;
-            padding: 10px 0;
+        @media screen and (min-width:721px) {
+            .image-gallery {
+                width: 50%;
+                margin: auto;
+                padding: 10px 0;
+            }
         }
