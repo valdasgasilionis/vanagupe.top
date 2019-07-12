@@ -167,6 +167,11 @@
                 font-size: 0.8rem;
                 font-weight: 400;
             }
+            .image-gallery {
+                width: 100%;
+                margin: auto;
+                padding: 5px 0;
+            }
         }
         
         @media screen and (max-width: 420px) {
@@ -183,6 +188,11 @@
                 font-size: 0.7rem;
                 font-weight: 400;
             }
+            .image-gallery {
+                width: 100%;
+                margin: auto;
+                padding: 2px 0;
+            }
         }
         
         @media screen and (max-width: 290px) {
@@ -195,6 +205,11 @@
                 grid-template-columns: 40% 60%;
                 font-size: 0.65rem;
                 font-weight: 400;
+            }
+            .image-gallery {
+                width: 100%;
+                margin: auto;
+                padding: 2px 0;
             }
         }
         /* Slideshow container */
