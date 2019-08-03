@@ -112,10 +112,10 @@
     
                     </div>
                     
-                    <div id="july" style="display:block">
+                    <div id="july" style="display:none">
                         @include('calendar.july')
                     </div>      
-                    <div id="august" style="display:none">
+                    <div id="august" style="display:block">
                         @include('calendar.august')         
                     </div>               
                     <div id="september" style="display:none">
