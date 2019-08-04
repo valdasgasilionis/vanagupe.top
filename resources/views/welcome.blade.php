@@ -105,7 +105,7 @@
                             <span class="price">XX &euro;</span>
                             <span class="price">@lang('messages.price')</span><br/>
                         <button  id="julybutton" onclick="displayJuly()">@lang('messages.july')</button>
-                        <button  id="augustbutton" onclick="displayAugust()">@lang('messages.august')</button>
+                        <button  id="augustbutton" style="background-color: rgba(176, 208, 175, 0.67)" onclick="displayAugust()">@lang('messages.august')</button>
                         <button  id="septemberbutton" onclick="displaySeptember()">@lang('messages.september')</button>
                         <button id="octoberbutton" onclick="displayOctober()">@lang('messages.october')</button>
                             
